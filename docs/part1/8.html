@@ -1,0 +1,712 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>8. 图片验证码 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="9.html" />
+    
+    
+    <link rel="prev" href="7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../part0/0.html">
+            
+                <a href="../part0/0.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    实战一：基于Django2.2可重用登录与注册系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1.搭建项目环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    2. 设计数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    3. admin后台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    4. url路由和视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    5. 前端页面设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    6. 登录视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    7. Django表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    8. 图片验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    9. session会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    10. 注册视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../part2/0.html">
+            
+                <a href="../part2/0.html">
+            
+                    
+                    实战二：Django2.2之CMDB资产管理系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../part2/1.html">
+            
+                <a href="../part2/1.html">
+            
+                    
+                    1.项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../part2/2.html">
+            
+                <a href="../part2/2.html">
+            
+                    
+                    2.模型设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../part2/3.html">
+            
+                <a href="../part2/3.html">
+            
+                    
+                    3.数据收集客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../part2/4.html">
+            
+                <a href="../part2/4.html">
+            
+                    
+                    4.收集Windows数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../part2/5.html">
+            
+                <a href="../part2/5.html">
+            
+                    
+                    5.Linux下收集数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../part2/6.html">
+            
+                <a href="../part2/6.html">
+            
+                    
+                    6.新资产待审批区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../part2/7.html">
+            
+                <a href="../part2/7.html">
+            
+                    
+                    7.审批新资产
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../part2/8.html">
+            
+                <a href="../part2/8.html">
+            
+                    
+                    8.已上线资产更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../part2/9.html">
+            
+                <a href="../part2/9.html">
+            
+                    
+                    9.前端框架AdminLTE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../part2/10.html">
+            
+                <a href="../part2/10.html">
+            
+                    
+                    10.资产总表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../part2/11.html">
+            
+                <a href="../part2/11.html">
+            
+                    
+                    11.资产详细页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../part2/12.html">
+            
+                <a href="../part2/12.html">
+            
+                    
+                    12.dashboard仪表盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >8. 图片验证码</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="8-&#x56FE;&#x7247;&#x9A8C;&#x8BC1;&#x7801;">8. &#x56FE;&#x7247;&#x9A8C;&#x8BC1;&#x7801;</h1>
+<p>&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x673A;&#x5668;&#x4EBA;&#x9891;&#x7E41;&#x767B;&#x5F55;&#x7F51;&#x7AD9;&#x6216;&#x8005;&#x7834;&#x574F;&#x5206;&#x5B50;&#x6076;&#x610F;&#x767B;&#x5F55;&#xFF0C;&#x5F88;&#x591A;&#x7528;&#x6237;&#x767B;&#x5F55;&#x548C;&#x6CE8;&#x518C;&#x7CFB;&#x7EDF;&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x56FE;&#x5F62;&#x9A8C;&#x8BC1;&#x7801;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x9A8C;&#x8BC1;&#x7801;&#xFF08;CAPTCHA&#xFF09;&#x662F;&#x201C;Completely Automated Public Turing test to tell Computers and Humans Apart&#x201D;&#xFF08;&#x5168;&#x81EA;&#x52A8;&#x533A;&#x5206;&#x8BA1;&#x7B97;&#x673A;&#x548C;&#x4EBA;&#x7C7B;&#x7684;&#x56FE;&#x7075;&#x6D4B;&#x8BD5;&#xFF09;&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x533A;&#x5206;&#x7528;&#x6237;&#x662F;&#x8BA1;&#x7B97;&#x673A;&#x8FD8;&#x662F;&#x4EBA;&#x7684;&#x516C;&#x5171;&#x5168;&#x81EA;&#x52A8;&#x7A0B;&#x5E8F;&#x3002;&#x53EF;&#x4EE5;&#x9632;&#x6B62;&#x6076;&#x610F;&#x7834;&#x89E3;&#x5BC6;&#x7801;&#x3001;&#x5237;&#x7968;&#x3001;&#x8BBA;&#x575B;&#x704C;&#x6C34;&#xFF0C;&#x6709;&#x6548;&#x9632;&#x6B62;&#x67D0;&#x4E2A;&#x9ED1;&#x5BA2;&#x5BF9;&#x67D0;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x6CE8;&#x518C;&#x7528;&#x6237;&#x7528;&#x7279;&#x5B9A;&#x7A0B;&#x5E8F;&#x66B4;&#x529B;&#x7834;&#x89E3;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4E0D;&#x65AD;&#x7684;&#x767B;&#x9646;&#x5C1D;&#x8BD5;&#x3002;</p>
+<p>&#x56FE;&#x5F62;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x5386;&#x53F2;&#x6BD4;&#x8F83;&#x60A0;&#x4E45;&#xFF0C;&#x5230;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x6709;&#x70B9;&#x82F1;&#x96C4;&#x672B;&#x8DEF;&#x7684;&#x5473;&#x9053;&#x4E86;&#x3002;&#x56E0;&#x4E3A;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x3001;&#x56FE;&#x50CF;&#x8BC6;&#x522B;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x673A;&#x5668;&#x4EBA;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x6BD4;&#x8F83;&#x6B63;&#x786E;&#x7684;&#x8BC6;&#x522B;&#x56FE;&#x50CF;&#x5185;&#x7684;&#x5B57;&#x7B26;&#x4E86;&#x3002;&#x4F46;&#x4E0D;&#x7BA1;&#x600E;&#x4E48;&#x8BF4;&#xFF0C;&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x9632;&#x5FA1;&#x624B;&#x6BB5;&#xFF0C;&#x81F3;&#x5C11;&#x8FD8;&#x662F;&#x53EF;&#x4EE5;&#x62B5;&#x6321;&#x4E00;&#x4E9B;&#x4F4E;&#x7EA7;&#x5165;&#x95E8;&#x7684;&#x653B;&#x51FB;&#x624B;&#x6BB5;&#xFF0C;&#x62AC;&#x9AD8;&#x4E86;&#x653B;&#x51FB;&#x8005;&#x7684;&#x95E8;&#x69DB;&#x3002;</p>
+<p>&#x5728;Django&#x4E2D;&#x5B9E;&#x73B0;&#x56FE;&#x7247;&#x9A8C;&#x8BC1;&#x7801;&#x529F;&#x80FD;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x6709;&#x73B0;&#x6210;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x5FC5;&#x81EA;&#x5DF1;&#x5F00;&#x53D1;&#xFF08;&#x4E5F;&#x8981;&#x80FD;&#x5F00;&#x53D1;&#x5F97;&#x51FA;&#x6765;&#xFF0C;&#x56E7;&#xFF09;&#x3002;&#x8FD9;&#x4E2A;&#x5E93;&#x53EB;&#x505A;<code>django-simple-captcha</code>&#x3002;</p>
+<h2 id="&#x4E00;&#x3001;&#x5B89;&#x88C5;captcha">&#x4E00;&#x3001;&#x5B89;&#x88C5;captcha</h2>
+<p>&#x5728;Pycharm&#x7684;terminal&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;pip&#x5B89;&#x88C5;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#xFF1A;</p>
+<pre><code>&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;pip install django-simple-captcha
+</code></pre><pre><code>(venv) D:\work\2019\for_test\mysite&gt;pip install django-simple-captcha
+Collecting django-simple-captcha
+  Downloading https://files.pythonhosted.org/packages/86/d4/5baf10bfc9eb7844872c256898a405e81f22f7213e008ec90875689f913d/django-simple-captcha-0
+.5.11.zip (234kB)
+    100% |&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;| 235kB 596kB/s
+Collecting six&gt;=1.2.0 (from django-simple-captcha)
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none
+-any.whl
+Requirement already satisfied: Django&gt;=1.8 in d:\work\2019\for_test\mysite\venv\lib\site-packages (from django-simple-captcha) (2.2)
+Collecting Pillow!=5.1.0,&gt;=2.2.2 (from django-simple-captcha)
+  Downloading https://files.pythonhosted.org/packages/40/f2/a424d4d5dd6aa8c26636969decbb3da1c01286d344e71429b1d648bccb64/Pillow-6.0.0-cp37-cp37m
+-win_amd64.whl (2.0MB)
+    100% |&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;| 2.0MB 2.2MB/s
+Collecting django-ranged-response==0.2.0 (from django-simple-captcha)
+  Downloading https://files.pythonhosted.org/packages/70/e3/9372fcdca8e9c3205e7979528ccd1a14354a9a24d38efff11c1846ff8bf1/django-ranged-response-
+0.2.0.tar.gz
+Requirement already satisfied: sqlparse in d:\work\2019\for_test\mysite\venv\lib\site-packages (from Django&gt;=1.8-&gt;django-simple-captcha) (0.3.0)
+
+Requirement already satisfied: pytz in d:\work\2019\for_test\mysite\venv\lib\site-packages (from Django&gt;=1.8-&gt;django-simple-captcha) (2018.9)
+Installing collected packages: six, Pillow, django-ranged-response, django-simple-captcha
+  Running setup.py install for django-ranged-response ... done
+  Running setup.py install for django-simple-captcha ... done
+Successfully installed Pillow-6.0.0 django-ranged-response-0.2.0 django-simple-captcha-0.5.11 six-1.12.0
+</code></pre><p>pip&#x81EA;&#x52A8;&#x5E2E;&#x6211;&#x4EEC;&#x5B89;&#x88C5;&#x4E86;&#x76F8;&#x5173;&#x7684;&#x4F9D;&#x8D56;&#x5E93;<code>six</code>&#x3001;<code>olefile</code>&#x548C;<code>Pillow</code>&#xFF0C;&#x5176;&#x4E2D;&#x7684;Pillow&#x662F;&#x5927;&#x540D;&#x9F0E;&#x9F0E;&#x7684;&#x7ED8;&#x56FE;&#x6A21;&#x5757;&#x3002;</p>
+<h2 id="&#x4E8C;&#x3001;&#x6CE8;&#x518C;captcha">&#x4E8C;&#x3001;&#x6CE8;&#x518C;captcha</h2>
+<p>&#x5728;settings&#x4E2D;&#xFF0C;&#x5C06;&#x2018;captcha&#x2019;&#x6CE8;&#x518C;&#x5230;app&#x5217;&#x8868;&#x91CC;&#xFF1A;</p>
+<pre><code># Application definition
+
+INSTALLED_APPS = [
+    &apos;django.contrib.admin&apos;,
+    &apos;django.contrib.auth&apos;,
+    &apos;django.contrib.contenttypes&apos;,
+    &apos;django.contrib.sessions&apos;,
+    &apos;django.contrib.messages&apos;,
+    &apos;django.contrib.staticfiles&apos;,
+    &apos;login&apos;,
+    &apos;captcha&apos;,
+]
+</code></pre><p>captcha&#x9700;&#x8981;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5EFA;&#x7ACB;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x8868;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x6267;&#x884C;migrate&#x547D;&#x4EE4;&#x751F;&#x6210;&#x6570;&#x636E;&#x8868;&#xFF1A;</p>
+<pre><code>(venv) D:\work\2019\for_test\mysite&gt;python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, captcha, contenttypes, login, sessions
+Running migrations:
+  Applying captcha.0001_initial... OK
+</code></pre><h2 id="&#x4E09;&#x3001;&#x6DFB;&#x52A0;url&#x8DEF;&#x7531;">&#x4E09;&#x3001;&#x6DFB;&#x52A0;url&#x8DEF;&#x7531;</h2>
+<p>&#x5728;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7684;urls.py&#x6587;&#x4EF6;&#x4E2D;&#x589E;&#x52A0;captcha&#x5BF9;&#x5E94;&#x7684;url&#xFF1A;</p>
+<pre><code>from django.contrib import admin
+from django.urls import path
+from django.urls import include
+from login import views
+
+urlpatterns = [
+    path(&apos;admin/&apos;, admin.site.urls),
+    path(&apos;index/&apos;, views.index),
+    path(&apos;login/&apos;, views.login),
+    path(&apos;register/&apos;, views.register),
+    path(&apos;logout/&apos;, views.logout),
+    path(&apos;captcha/&apos;, include(&apos;captcha.urls&apos;))   # &#x589E;&#x52A0;&#x8FD9;&#x4E00;&#x884C;
+]
+</code></pre><p>&#x7531;&#x4E8E;&#x4F7F;&#x7528;&#x4E86;&#x4E8C;&#x7EA7;&#x8DEF;&#x7531;&#x673A;&#x5236;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x9876;&#x90E8;<code>from django.urls import include</code>&#x3002;</p>
+<h2 id="&#x56DB;&#x3001;&#x4FEE;&#x6539;formspy">&#x56DB;&#x3001;&#x4FEE;&#x6539;forms.py</h2>
+<p>&#x5982;&#x679C;&#x4E0A;&#x9762;&#x90FD;OK&#x4E86;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x6211;&#x4EEC;&#x7684;forms.py&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;CaptchaField&#x4E86;&#x3002;</p>
+<pre><code>from django import forms
+from captcha.fields import CaptchaField
+
+class UserForm(forms.Form):
+    username = forms.CharField(label=&quot;&#x7528;&#x6237;&#x540D;&quot;, max_length=128, widget=forms.TextInput(attrs={&apos;class&apos;: &apos;form-control&apos;, &apos;placeholder&apos;: &quot;Username&quot;,&apos;autofocus&apos;: &apos;&apos;}))
+    password = forms.CharField(label=&quot;&#x5BC6;&#x7801;&quot;, max_length=256, widget=forms.PasswordInput(attrs={&apos;class&apos;: &apos;form-control&apos;,  &apos;placeholder&apos;: &quot;Password&quot;}))
+    captcha = CaptchaField(label=&apos;&#x9A8C;&#x8BC1;&#x7801;&apos;)
+</code></pre><p>&#x6CE8;&#x610F;&#x9700;&#x8981;&#x63D0;&#x524D;&#x5BFC;&#x5165;<code>from captcha.fields import CaptchaField</code>&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x50CF;&#x5199;&#x666E;&#x901A;&#x7684;form&#x5B57;&#x6BB5;&#x4E00;&#x6837;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;captcha&#x5B57;&#x6BB5;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF01;</p>
+<h2 id="&#x4E94;&#x3001;&#x4FEE;&#x6539;loginhtml">&#x4E94;&#x3001;&#x4FEE;&#x6539;login.html</h2>
+<p>&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x524D;&#x9762;&#x662F;&#x624B;&#x52A8;&#x751F;&#x6210;&#x7684;form&#x8868;&#x5355;&#xFF0C;&#x6240;&#x4EE5;&#x8FD8;&#x8981;&#x4FEE;&#x6539;&#x4E00;&#x4E0B;&#xFF0C;&#x6DFB;&#x52A0;captcha&#x7684;&#x76F8;&#x5173;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>{% load static %}
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;!-- Required meta tags --&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+    &lt;!-- &#x4E0A;&#x8FF0;meta&#x6807;&#x7B7E;*&#x5FC5;&#x987B;*&#x653E;&#x5728;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x5185;&#x5BB9;&#x90FD;*&#x5FC5;&#x987B;*&#x8DDF;&#x968F;&#x5176;&#x540E;&#xFF01; --&gt;
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link href=&quot;https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;{% static &apos;login/css/login.css&apos; %}&quot; rel=&quot;stylesheet&quot;/&gt;
+    &lt;title&gt;&#x767B;&#x5F55;&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;col&quot;&gt;
+                &lt;form class=&quot;form-login&quot; action=&quot;/login/&quot; method=&quot;post&quot;&gt;
+
+                {% if login_form.captcha.errors %}
+                    &lt;div class=&quot;alert alert-warning&quot;&gt;{{ login_form.captcha.errors }}&lt;/div&gt;
+                {% elif message %}
+                    &lt;div class=&quot;alert alert-warning&quot;&gt;{{ message }}&lt;/div&gt;
+                {% endif %}
+
+                  {% csrf_token %}
+                  &lt;h3 class=&quot;text-center&quot;&gt;&#x6B22;&#x8FCE;&#x767B;&#x5F55;&lt;/h3&gt;
+
+                  &lt;div class=&quot;form-group&quot;&gt;
+                    {{ login_form.username.label_tag }}
+                    {{ login_form.username}}
+                  &lt;/div&gt;
+
+                  &lt;div class=&quot;form-group&quot;&gt;
+                    {{ login_form.password.label_tag }}
+                    {{ login_form.password }}
+                  &lt;/div&gt;
+
+                  &lt;div class=&quot;form-group&quot;&gt;
+                    {{ login_form.captcha.label_tag }}
+                    {{ login_form.captcha }}
+                  &lt;/div&gt;
+
+                  &lt;div&gt;
+                      &lt;a href=&quot;/register/&quot; class=&quot;text-success &quot; &gt;&lt;ins&gt;&#x65B0;&#x7528;&#x6237;&#x6CE8;&#x518C;&lt;/ins&gt;&lt;/a&gt;
+                      &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary float-right&quot;&gt;&#x767B;&#x5F55;&lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+    &lt;/div&gt; &lt;!-- /container --&gt;
+
+    &lt;!-- Optional JavaScript --&gt;
+    &lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
+    {#    &#x4EE5;&#x4E0B;&#x4E09;&#x8005;&#x7684;&#x5F15;&#x7528;&#x987A;&#x5E8F;&#x662F;&#x56FA;&#x5B9A;&#x7684;#}
+    &lt;script src=&quot;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.bootcss.com/popper.js/1.15.0/umd/popper.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>&#x8FD9;&#x91CC;&#x5728;&#x9876;&#x90E8;&#x7684;&#x6D88;&#x606F;&#x5904;&#xFF0C;&#x5728;<code>{% if %}</code>&#x6A21;&#x677F;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x989D;&#x5916;&#x589E;&#x52A0;&#x4E86;&#x4E00;&#x6761;<code>{{ login_form.captcha.errors }}</code>&#x7684;&#x5224;&#x65AD;&#xFF0C;&#x7528;&#x4E8E;&#x660E;&#x786E;&#x6307;&#x793A;&#x7528;&#x6237;&#x7684;&#x9A8C;&#x8BC1;&#x7801;&#x4E0D;&#x6B63;&#x786E;&#x3002;</p>
+<h2 id="&#x516D;&#x3001;&#x67E5;&#x770B;&#x6548;&#x679C;">&#x516D;&#x3001;&#x67E5;&#x770B;&#x6548;&#x679C;</h2>
+<p>&#x91CD;&#x542F;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8FDB;&#x5165;&#x767B;&#x5F55;&#x9875;&#x9762;&#xFF0C;&#x5C1D;&#x8BD5;&#x7528;&#x7528;&#x6237;&#x540D;&#x9519;&#x8BEF;&#x3001;&#x5BC6;&#x7801;&#x4E0D;&#x5BF9;&#x3001;&#x9A8C;&#x8BC1;&#x7801;&#x4E0D;&#x5BF9;&#x3001;&#x5168;&#x5BF9;&#x7684;&#x4E0D;&#x540C;&#x60C5;&#x51B5;&#xFF0C;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x65B0;&#x589E;&#x7684;&#x56DB;&#x4F4D;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x6548;&#x679C;&#x5982;&#x4F55;&#x3002;</p>
+<p><img src="images/110-1.png" alt="110-1"></p>
+<p><img src="images/110-2.png" alt="110-2"></p>
+<p>&#x5C31;&#x662F;&#x8FD9;&#x4E48;&#x7B80;&#x5355;&#xFF01;&#x6211;&#x4EEC;&#x52A0;&#x5165;&#x4E86;&#x4E00;&#x4E2A;&#x9632;&#x6B62;&#x673A;&#x5668;&#x4EBA;&#x6216;&#x8005;&#x6076;&#x610F;&#x767B;&#x5F55;&#x7684;&#x56FE;&#x5F62;&#x9A8C;&#x8BC1;&#x7801;&#x529F;&#x80FD;&#xFF0C;&#x867D;&#x7136;&#x754C;&#x9762;&#x96BE;&#x770B;&#x4E86;&#x70B9;&#xFF0C;&#x4F46;&#x5E95;&#x5B50;&#x662F;&#x597D;&#x7684;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x7F8E;&#x5316;&#x3002;&#x5176;&#x4E2D;&#x9A8C;&#x8BC1;&#x56FE;&#x5F62;&#x7801;&#x662F;&#x5426;&#x6B63;&#x786E;&#x7684;&#x5DE5;&#x4F5C;&#x90FD;&#x662F;&#x5728;&#x540E;&#x53F0;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>is_valid()</code>&#x8FD9;&#x4E2A;forms&#x5185;&#x7F6E;&#x7684;&#x9A8C;&#x8BC1;&#x65B9;&#x6CD5;&#x5C31;&#x4E00;&#x8D77;&#x8FDB;&#x884C;&#x4E86;&#xFF0C;&#x5B8C;&#x5168;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x4E2D;&#x6DFB;&#x52A0;&#x4EFB;&#x4F55;&#x7684;&#x9A8C;&#x8BC1;&#x4EE3;&#x7801;&#xFF0C;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x5FEB;&#x6377;&#xFF01;</p>
+<p>&#x5173;&#x4E8E;captcha&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5F53;&#x7136;&#x7EDD;&#x4E0D;&#x4EC5;&#x9650;&#x4E8E;&#x6B64;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x516D;&#x4F4D;&#x3001;&#x516B;&#x4F4D;&#x9A8C;&#x8BC1;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x56FE;&#x5F62;&#x566A;&#x70B9;&#x7684;&#x751F;&#x6210;&#x6A21;&#x5F0F;&#x8FDB;&#x884C;&#x5B9A;&#x5236;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C31;&#x7559;&#x5F85;&#x4F60;&#x81EA;&#x5DF1;&#x5B66;&#x4E60;&#x548C;&#x7814;&#x7A76;&#x4E86;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7.html" class="navigation navigation-prev " aria-label="Previous page: 7. Django表单">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="9.html" class="navigation navigation-next " aria-label="Next page: 9. session会话">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"typora-copy-images-to":"images","title":"8. 图片验证码","level":"1.3.8","depth":2,"next":{"title":"9. session会话","level":"1.3.9","depth":2,"path":"part1/9.md","ref":"part1/9.md","articles":[]},"previous":{"title":"7. Django表单","level":"1.3.7","depth":2,"path":"part1/7.md","ref":"part1/7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part1/8.md","mtime":"2020-08-11T08:56:55.943Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-14T00:47:35.448Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

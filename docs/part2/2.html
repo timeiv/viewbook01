@@ -1,0 +1,1543 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.模型设计 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.html" />
+    
+    
+    <link rel="prev" href="1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../part0/0.html">
+            
+                <a href="../part0/0.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../part1/0.html">
+            
+                <a href="../part1/0.html">
+            
+                    
+                    实战一：基于Django2.2可重用登录与注册系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../part1/1.html">
+            
+                <a href="../part1/1.html">
+            
+                    
+                    1.搭建项目环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../part1/2.html">
+            
+                <a href="../part1/2.html">
+            
+                    
+                    2. 设计数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../part1/3.html">
+            
+                <a href="../part1/3.html">
+            
+                    
+                    3. admin后台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../part1/4.html">
+            
+                <a href="../part1/4.html">
+            
+                    
+                    4. url路由和视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../part1/5.html">
+            
+                <a href="../part1/5.html">
+            
+                    
+                    5. 前端页面设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../part1/6.html">
+            
+                <a href="../part1/6.html">
+            
+                    
+                    6. 登录视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../part1/7.html">
+            
+                <a href="../part1/7.html">
+            
+                    
+                    7. Django表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../part1/8.html">
+            
+                <a href="../part1/8.html">
+            
+                    
+                    8. 图片验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../part1/9.html">
+            
+                <a href="../part1/9.html">
+            
+                    
+                    9. session会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../part1/10.html">
+            
+                <a href="../part1/10.html">
+            
+                    
+                    10. 注册视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    实战二：Django2.2之CMDB资产管理系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1.项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    2.模型设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    3.数据收集客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    4.收集Windows数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    5.Linux下收集数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    6.新资产待审批区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    7.审批新资产
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    8.已上线资产更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    9.前端框架AdminLTE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    10.资产总表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="11.html">
+            
+                <a href="11.html">
+            
+                    
+                    11.资产详细页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="12.html">
+            
+                <a href="12.html">
+            
+                    
+                    12.dashboard仪表盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.模型设计</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="2&#x6A21;&#x578B;&#x8BBE;&#x8BA1;">2.&#x6A21;&#x578B;&#x8BBE;&#x8BA1;</h1>
+<h2 id="&#x4E00;&#x3001;&#x521B;&#x5EFA;&#x9879;&#x76EE;">&#x4E00;&#x3001;&#x521B;&#x5EFA;&#x9879;&#x76EE;</h2>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x65B0;&#x5F00;&#x4E00;&#x4E2A;&#x526F;&#x672C;....&#x54B3;&#x54B3;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x901A;&#x8FC7;Pycharm&#x76F4;&#x63A5;&#x521B;&#x5EFA;CMDB&#x9879;&#x76EE;&#xFF0C;&#x5EFA;&#x7ACB;&#x865A;&#x62DF;&#x73AF;&#x5883;<code>env</code>&#xFF0C;&#x5B89;&#x88C5;&#x6700;&#x65B0;&#x7684;Django2.2&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;app&#xFF0C;&#x540D;&#x5B57;&#x5C31;&#x53EB;&#x505A;assets&#xFF0C;&#x6700;&#x540E;&#x914D;&#x7F6E;&#x597D;settings&#x4E2D;&#x7684;&#x8BED;&#x8A00;&#x548C;&#x65F6;&#x533A;&#x3002;&#x8FD9;&#x4E9B;&#x57FA;&#x672C;&#x8FC7;&#x7A0B;&#x4EE5;&#x540E;&#x5C31;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x4E86;&#xFF0C;&#x4E0D;&#x719F;&#x6089;&#x7684;&#x8BF7;&#x53C2;&#x8003;&#x6559;&#x7A0B;&#x7684;&#x524D;&#x9762;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x521B;&#x5EFA;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x521D;&#x59CB;&#x72B6;&#x6001;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="images/118-1.png" alt="118-1"></p>
+<h2 id="&#x4E8C;&#x3001;&#x6A21;&#x578B;&#x8BBE;&#x8BA1;">&#x4E8C;&#x3001;&#x6A21;&#x578B;&#x8BBE;&#x8BA1;</h2>
+<p><strong>&#x8BF4;&#x660E;&#xFF1A;&#x672C;&#x9879;&#x76EE;&#x91C7;&#x7528;SQLite&#x6570;&#x636E;&#x5E93;</strong></p>
+<p>&#x6A21;&#x578B;&#x8BBE;&#x8BA1;&#x662F;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x91CD;&#x4E2D;&#x4E4B;&#x91CD;&#xFF0C;&#x5176;&#x5B83;&#x6240;&#x6709;&#x7684;&#x5185;&#x5BB9;&#x5176;&#x5B9E;&#x90FD;&#x662F;&#x56F4;&#x7ED5;&#x5B83;&#x5C55;&#x5F00;&#x7684;&#x3002;</p>
+<p>&#x800C;&#x6211;&#x4EEC;&#x8BBE;&#x8BA1;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x539F;&#x5219;&#x548C;&#x53C2;&#x8003;&#x4F9D;&#x636E;&#x662F;&#x524D;&#x4E00;&#x8282;&#x5206;&#x6790;&#x7684;&#x9879;&#x76EE;&#x9700;&#x6C42;&#x548C;&#x6570;&#x636E;&#x5206;&#x7C7B;&#x8868;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x7684;&#x6A21;&#x578B;&#x67B6;&#x6784;&#x56FE;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="images/118-2.png" alt="118-2"></p>
+<h3 id="1&#x8D44;&#x4EA7;&#x5171;&#x6709;&#x6570;&#x636E;&#x6A21;&#x578B;">1.&#x8D44;&#x4EA7;&#x5171;&#x6709;&#x6570;&#x636E;&#x6A21;&#x578B;</h3>
+<p>&#x6253;&#x5F00;assets/models.py&#x6587;&#x4EF6;&#xFF0C;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x8981;&#x8BBE;&#x8BA1;&#x4E00;&#x5F20;&#x8D44;&#x4EA7;&#x5171;&#x6709;&#x6570;&#x636E;&#x8868;&#xFF1A;</p>
+<pre><code>from django.db import models
+from django.contrib.auth.models import User
+# Create your models here.
+
+
+class Asset(models.Model):
+    &quot;&quot;&quot;    &#x6240;&#x6709;&#x8D44;&#x4EA7;&#x7684;&#x5171;&#x6709;&#x6570;&#x636E;&#x8868;    &quot;&quot;&quot;
+
+    asset_type_choice = (
+        (&apos;server&apos;, &apos;&#x670D;&#x52A1;&#x5668;&apos;),
+        (&apos;networkdevice&apos;, &apos;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&apos;),
+        (&apos;storagedevice&apos;, &apos;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&apos;),
+        (&apos;securitydevice&apos;, &apos;&#x5B89;&#x5168;&#x8BBE;&#x5907;&apos;),
+        (&apos;software&apos;, &apos;&#x8F6F;&#x4EF6;&#x8D44;&#x4EA7;&apos;),
+    )
+
+    asset_status = (
+        (0, &apos;&#x5728;&#x7EBF;&apos;),
+        (1, &apos;&#x4E0B;&#x7EBF;&apos;),
+        (2, &apos;&#x672A;&#x77E5;&apos;),
+        (3, &apos;&#x6545;&#x969C;&apos;),
+        (4, &apos;&#x5907;&#x7528;&apos;),
+        )
+
+    asset_type = models.CharField(choices=asset_type_choice, max_length=64, default=&apos;server&apos;, verbose_name=&quot;&#x8D44;&#x4EA7;&#x7C7B;&#x578B;&quot;)
+    name = models.CharField(max_length=64, unique=True, verbose_name=&quot;&#x8D44;&#x4EA7;&#x540D;&#x79F0;&quot;)     # &#x4E0D;&#x53EF;&#x91CD;&#x590D;
+    sn = models.CharField(max_length=128, unique=True, verbose_name=&quot;&#x8D44;&#x4EA7;&#x5E8F;&#x5217;&#x53F7;&quot;)  # &#x4E0D;&#x53EF;&#x91CD;&#x590D;
+    business_unit = models.ForeignKey(&apos;BusinessUnit&apos;, null=True, blank=True, verbose_name=&apos;&#x6240;&#x5C5E;&#x4E1A;&#x52A1;&#x7EBF;&apos;,
+                                      on_delete=models.SET_NULL)
+    status = models.SmallIntegerField(choices=asset_status, default=0, verbose_name=&apos;&#x8BBE;&#x5907;&#x72B6;&#x6001;&apos;)
+
+    manufacturer = models.ForeignKey(&apos;Manufacturer&apos;, null=True, blank=True, verbose_name=&apos;&#x5236;&#x9020;&#x5546;&apos;,
+                                     on_delete=models.SET_NULL)
+    manage_ip = models.GenericIPAddressField(null=True, blank=True, verbose_name=&apos;&#x7BA1;&#x7406;IP&apos;)
+    tags = models.ManyToManyField(&apos;Tag&apos;, blank=True, verbose_name=&apos;&#x6807;&#x7B7E;&apos;)
+    admin = models.ForeignKey(User, null=True, blank=True, verbose_name=&apos;&#x8D44;&#x4EA7;&#x7BA1;&#x7406;&#x5458;&apos;, related_name=&apos;admin&apos;,
+                              on_delete=models.SET_NULL)
+    idc = models.ForeignKey(&apos;IDC&apos;, null=True, blank=True, verbose_name=&apos;&#x6240;&#x5728;&#x673A;&#x623F;&apos;, on_delete=models.SET_NULL)
+    contract = models.ForeignKey(&apos;Contract&apos;, null=True, blank=True, verbose_name=&apos;&#x5408;&#x540C;&apos;, on_delete=models.SET_NULL)
+
+    purchase_day = models.DateField(null=True, blank=True, verbose_name=&quot;&#x8D2D;&#x4E70;&#x65E5;&#x671F;&quot;)
+    expire_day = models.DateField(null=True, blank=True, verbose_name=&quot;&#x8FC7;&#x4FDD;&#x65E5;&#x671F;&quot;)
+    price = models.FloatField(null=True, blank=True, verbose_name=&quot;&#x4EF7;&#x683C;&quot;)
+
+    approved_by = models.ForeignKey(User, null=True, blank=True, verbose_name=&apos;&#x6279;&#x51C6;&#x4EBA;&apos;, related_name=&apos;approved_by&apos;,
+                                    on_delete=models.SET_NULL)
+
+    memo = models.TextField(null=True, blank=True, verbose_name=&apos;&#x5907;&#x6CE8;&apos;)
+    c_time = models.DateTimeField(auto_now_add=True, verbose_name=&apos;&#x6279;&#x51C6;&#x65E5;&#x671F;&apos;)
+    m_time = models.DateTimeField(auto_now=True, verbose_name=&apos;&#x66F4;&#x65B0;&#x65E5;&#x671F;&apos;)
+
+    def __str__(self):
+        return &apos;&lt;%s&gt;  %s&apos; % (self.get_asset_type_display(), self.name)
+
+    class Meta:
+        verbose_name = &apos;&#x8D44;&#x4EA7;&#x603B;&#x8868;&apos;
+        verbose_name_plural = &quot;&#x8D44;&#x4EA7;&#x603B;&#x8868;&quot;
+        ordering = [&apos;-c_time&apos;]
+</code></pre><p>&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>&#x5BFC;&#x5165;django.contrib.auto.models&#x5185;&#x7F6E;&#x7684;User&#x8868;&#xFF0C;&#x4F5C;&#x4E3A;&#x6211;&#x4EEC;CMDB&#x9879;&#x76EE;&#x7684;&#x7528;&#x6237;&#x8868;&#xFF0C;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x7BA1;&#x7406;&#x5458;&#x548C;&#x6279;&#x51C6;&#x4EBA;&#x5458;&#x7684;&#x4FE1;&#x606F;&#xFF1B;</li>
+<li>sn&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5B57;&#x6BB5;&#x662F;&#x6240;&#x6709;&#x8D44;&#x4EA7;&#x90FD;&#x5FC5;&#x987B;&#x6709;&#xFF0C;&#x5E76;&#x4E14;&#x552F;&#x4E00;&#x4E0D;&#x53EF;&#x91CD;&#x590D;&#x7684;&#xFF01;&#x901A;&#x5E38;&#x6765;&#x81EA;&#x81EA;&#x52A8;&#x6536;&#x96C6;&#x7684;&#x6570;&#x636E;&#x4E2D;&#xFF1B;</li>
+<li>name&#x548C;sn&#x4E00;&#x6837;&#xFF0C;&#x4E5F;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF1B;</li>
+<li>asset_type_choice&#x548C;asset_status&#x5206;&#x522B;&#x8BBE;&#x8BA1;&#x4E3A;&#x4E24;&#x4E2A;&#x9009;&#x62E9;&#x7C7B;&#x578B;</li>
+<li>adamin&#x548C;approved_by&#x662F;&#x5206;&#x522B;&#x662F;&#x5F53;&#x524D;&#x8D44;&#x4EA7;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x548C;&#x5C06;&#x8BE5;&#x8D44;&#x4EA7;&#x4E0A;&#x7EBF;&#x7684;&#x5BA1;&#x6279;&#x5458;&#xFF0C;&#x4E3A;&#x4E86;&#x533A;&#x5206;&#x4ED6;&#x4EEC;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E86;related_name&#xFF1B;</li>
+<li>Asset&#x8868;&#x4E2D;&#x7684;&#x5F88;&#x591A;&#x5B57;&#x6BB5;&#x5185;&#x5BB9;&#x90FD;&#x65E0;&#x6CD5;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#xFF0C;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x8F93;&#x5165;&#xFF0C;&#x6BD4;&#x5982;&#x5408;&#x540C;&#x3001;&#x5907;&#x6CE8;&#x3002;</li>
+<li>&#x6700;&#x5173;&#x952E;&#x7684;&#x662F;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x5916;&#x952E;&#x5B57;&#x6BB5;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;<code>on_delete=models.SET_NULL</code>&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x5F53;&#x5173;&#x8054;&#x7684;&#x5BF9;&#x8C61;&#x88AB;&#x5220;&#x9664;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x8D44;&#x4EA7;&#x6570;&#x636E;&#x8868;&#x3002;</li>
+</ul>
+<h3 id="2&#x670D;&#x52A1;&#x5668;&#x6A21;&#x578B;">2.&#x670D;&#x52A1;&#x5668;&#x6A21;&#x578B;</h3>
+<p>&#x670D;&#x52A1;&#x5668;&#x4F5C;&#x4E3A;&#x8D44;&#x4EA7;&#x7684;&#x4E00;&#x79CD;&#xFF0C;&#x800C;&#x4E14;&#x662F;&#x6700;&#x4E3B;&#x8981;&#x7684;&#x7BA1;&#x7406;&#x5BF9;&#x8C61;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E9B;&#x91CD;&#x8981;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x5176;&#x6A21;&#x578B;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>class Server(models.Model):
+    &quot;&quot;&quot;&#x670D;&#x52A1;&#x5668;&#x8BBE;&#x5907;&quot;&quot;&quot;
+
+    sub_asset_type_choice = (
+        (0, &apos;PC&#x670D;&#x52A1;&#x5668;&apos;),
+        (1, &apos;&#x5200;&#x7247;&#x673A;&apos;),
+        (2, &apos;&#x5C0F;&#x578B;&#x673A;&apos;),
+    )
+
+    created_by_choice = (
+        (&apos;auto&apos;, &apos;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&apos;),
+        (&apos;manual&apos;, &apos;&#x624B;&#x5DE5;&#x5F55;&#x5165;&apos;),
+    )
+
+    asset = models.OneToOneField(&apos;Asset&apos;, on_delete=models.CASCADE)  # &#x975E;&#x5E38;&#x5173;&#x952E;&#x7684;&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x8054;&#xFF01;asset&#x88AB;&#x5220;&#x9664;&#x7684;&#x65F6;&#x5019;&#x4E00;&#x5E76;&#x5220;&#x9664;server
+    sub_asset_type = models.SmallIntegerField(choices=sub_asset_type_choice, default=0, verbose_name=&quot;&#x670D;&#x52A1;&#x5668;&#x7C7B;&#x578B;&quot;)
+    created_by = models.CharField(choices=created_by_choice, max_length=32, default=&apos;auto&apos;, verbose_name=&quot;&#x6DFB;&#x52A0;&#x65B9;&#x5F0F;&quot;)
+    hosted_on = models.ForeignKey(&apos;self&apos;, related_name=&apos;hosted_on_server&apos;,
+                                  blank=True, null=True, verbose_name=&quot;&#x5BBF;&#x4E3B;&#x673A;&quot;, on_delete=models.CASCADE)  # &#x865A;&#x62DF;&#x673A;&#x4E13;&#x7528;&#x5B57;&#x6BB5;
+    model = models.CharField(max_length=128, null=True, blank=True, verbose_name=&apos;&#x670D;&#x52A1;&#x5668;&#x578B;&#x53F7;&apos;)
+    raid_type = models.CharField(max_length=512, blank=True, null=True, verbose_name=&apos;Raid&#x7C7B;&#x578B;&apos;)
+
+    os_type = models.CharField(&apos;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&apos;, max_length=64, blank=True, null=True)
+    os_distribution = models.CharField(&apos;&#x53D1;&#x884C;&#x5546;&apos;, max_length=64, blank=True, null=True)
+    os_release = models.CharField(&apos;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&apos;, max_length=64, blank=True, null=True)
+
+    def __str__(self):
+        return &apos;%s--%s--%s &lt;sn:%s&gt;&apos; % (self.asset.name, self.get_sub_asset_type_display(), self.model, self.asset.sn)
+
+    class Meta:
+        verbose_name = &apos;&#x670D;&#x52A1;&#x5668;&apos;
+        verbose_name_plural = &quot;&#x670D;&#x52A1;&#x5668;&quot;
+</code></pre><p>&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>&#x6BCF;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x90FD;&#x552F;&#x4E00;&#x5173;&#x8054;&#x7740;&#x4E00;&#x4E2A;&#x8D44;&#x4EA7;&#x5BF9;&#x8C61;&#xFF0C;&#x56E0;&#x6B64;&#x4F7F;&#x7528;OneToOneField&#x6784;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x4E00;&#x5BF9;&#x4E00;&#x5B57;&#x6BB5;&#xFF0C;&#x8FD9;&#x975E;&#x5E38;&#x91CD;&#x8981;!</li>
+<li>&#x670D;&#x52A1;&#x5668;&#x53C8;&#x53EF;&#x5206;&#x4E3A;&#x51E0;&#x79CD;&#x5B50;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x91CC;&#x5B9A;&#x4E49;&#x4E86;&#x4E09;&#x79CD;&#xFF1B;</li>
+<li>&#x670D;&#x52A1;&#x5668;&#x6DFB;&#x52A0;&#x7684;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x624B;&#x52A8;&#x548C;&#x81EA;&#x52A8;&#xFF1B;</li>
+<li>&#x6709;&#x4E9B;&#x670D;&#x52A1;&#x5668;&#x662F;&#x865A;&#x62DF;&#x673A;&#x6216;&#x8005;docker&#x751F;&#x6210;&#x7684;&#xFF0C;&#x6CA1;&#x6709;&#x7269;&#x7406;&#x5B9E;&#x4F53;&#xFF0C;&#x5B58;&#x5728;&#x4E8E;&#x5BBF;&#x4E3B;&#x673A;&#x4E2D;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x589E;&#x52A0;&#x4E00;&#x4E2A;hosted_on&#x5B57;&#x6BB5;&#xFF1B;&#x8FD9;&#x91CC;&#x8BA4;&#x4E3A;&#xFF0C;&#x5BBF;&#x4E3B;&#x673A;&#x5982;&#x679C;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x865A;&#x62DF;&#x673A;&#x4E5F;&#x5C31;&#x4E0D;&#x5B58;&#x5728;&#x4E86;&#xFF1B;</li>
+<li>&#x670D;&#x52A1;&#x5668;&#x6709;&#x578B;&#x53F7;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x679C;&#x786C;&#x4EF6;&#x4FE1;&#x606F;&#x4E2D;&#x4E0D;&#x5305;&#x542B;&#xFF0C;&#x90A3;&#x4E48;&#x6307;&#x7684;&#x5C31;&#x662F;&#x4E3B;&#x677F;&#x578B;&#x53F7;&#xFF1B;</li>
+<li>Raid&#x7C7B;&#x578B;&#x5728;&#x91C7;&#x7528;&#x4E86;Raid&#x7684;&#x65F6;&#x5019;&#x624D;&#x6709;&#xFF0C;&#x5426;&#x5219;&#x4E3A;&#x7A7A;</li>
+<li>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x5305;&#x542B;&#x7C7B;&#x578B;&#x3001;&#x53D1;&#x884C;&#x7248;&#x672C;&#x548C;&#x5177;&#x4F53;&#x7248;&#x672C;&#x3002;</li>
+</ul>
+<h3 id="3&#x5B89;&#x5168;&#x3001;&#x7F51;&#x7EDC;&#x3001;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x548C;&#x8F6F;&#x4EF6;&#x8D44;&#x4EA7;&#x7684;&#x6A21;&#x578B;">3.&#x5B89;&#x5168;&#x3001;&#x7F51;&#x7EDC;&#x3001;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x548C;&#x8F6F;&#x4EF6;&#x8D44;&#x4EA7;&#x7684;&#x6A21;&#x578B;</h3>
+<p>&#x8FD9;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x4E0D;&#x662F;&#x9879;&#x76EE;&#x7684;&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#xFF0C;&#x800C;&#x4E14;&#x6570;&#x636E;&#x5927;&#x591A;&#x6570;&#x4E0D;&#x80FD;&#x81EA;&#x52A8;&#x6536;&#x96C6;&#x548C;&#x62A5;&#x544A;&#xFF0C;&#x5F88;&#x591A;&#x90FD;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x5F55;&#x5165;&#x3002;&#x6211;&#x8FD9;&#x91CC;&#x7ED9;&#x51FA;&#x4E86;&#x8303;&#x4F8B;&#xFF0C;&#x66F4;&#x591A;&#x7684;&#x6570;&#x636E;&#x5B57;&#x6BB5;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x6DFB;&#x52A0;&#x3002;</p>
+<pre><code>class SecurityDevice(models.Model):
+    &quot;&quot;&quot;&#x5B89;&#x5168;&#x8BBE;&#x5907;&quot;&quot;&quot;
+
+    sub_asset_type_choice = (
+        (0, &apos;&#x9632;&#x706B;&#x5899;&apos;),
+        (1, &apos;&#x5165;&#x4FB5;&#x68C0;&#x6D4B;&#x8BBE;&#x5907;&apos;),
+        (2, &apos;&#x4E92;&#x8054;&#x7F51;&#x7F51;&#x5173;&apos;),
+        (4, &apos;&#x8FD0;&#x7EF4;&#x5BA1;&#x8BA1;&#x7CFB;&#x7EDF;&apos;),
+    )
+
+    asset = models.OneToOneField(&apos;Asset&apos;, on_delete=models.CASCADE)
+    sub_asset_type = models.SmallIntegerField(choices=sub_asset_type_choice, default=0, verbose_name=&quot;&#x5B89;&#x5168;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&quot;)
+    model = models.CharField(max_length=128, default=&apos;&#x672A;&#x77E5;&#x578B;&#x53F7;&apos;, verbose_name=&apos;&#x5B89;&#x5168;&#x8BBE;&#x5907;&#x578B;&#x53F7;&apos;)
+
+    def __str__(self):
+        return self.asset.name + &quot;--&quot; + self.get_sub_asset_type_display() + str(self.model) + &quot; id:%s&quot; % self.id
+
+    class Meta:
+        verbose_name = &apos;&#x5B89;&#x5168;&#x8BBE;&#x5907;&apos;
+        verbose_name_plural = &quot;&#x5B89;&#x5168;&#x8BBE;&#x5907;&quot;
+
+
+class StorageDevice(models.Model):
+    &quot;&quot;&quot;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&quot;&quot;&quot;
+
+    sub_asset_type_choice = (
+        (0, &apos;&#x78C1;&#x76D8;&#x9635;&#x5217;&apos;),
+        (1, &apos;&#x7F51;&#x7EDC;&#x5B58;&#x50A8;&#x5668;&apos;),
+        (2, &apos;&#x78C1;&#x5E26;&#x5E93;&apos;),
+        (4, &apos;&#x78C1;&#x5E26;&#x673A;&apos;),
+    )
+
+    asset = models.OneToOneField(&apos;Asset&apos;, on_delete=models.CASCADE)
+    sub_asset_type = models.SmallIntegerField(choices=sub_asset_type_choice, default=0, verbose_name=&quot;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&quot;)
+    model = models.CharField(max_length=128, default=&apos;&#x672A;&#x77E5;&#x578B;&#x53F7;&apos;, verbose_name=&apos;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x578B;&#x53F7;&apos;)
+
+    def __str__(self):
+        return self.asset.name + &quot;--&quot; + self.get_sub_asset_type_display() + str(self.model) + &quot; id:%s&quot; % self.id
+
+    class Meta:
+        verbose_name = &apos;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&apos;
+        verbose_name_plural = &quot;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&quot;
+
+
+class NetworkDevice(models.Model):
+    &quot;&quot;&quot;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&quot;&quot;&quot;
+
+    sub_asset_type_choice = (
+        (0, &apos;&#x8DEF;&#x7531;&#x5668;&apos;),
+        (1, &apos;&#x4EA4;&#x6362;&#x673A;&apos;),
+        (2, &apos;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&apos;),
+        (4, &apos;VPN&#x8BBE;&#x5907;&apos;),
+    )
+
+    asset = models.OneToOneField(&apos;Asset&apos;, on_delete=models.CASCADE)
+    sub_asset_type = models.SmallIntegerField(choices=sub_asset_type_choice, default=0, verbose_name=&quot;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&quot;)
+
+    vlan_ip = models.GenericIPAddressField(blank=True, null=True, verbose_name=&quot;VLanIP&quot;)
+    intranet_ip = models.GenericIPAddressField(blank=True, null=True, verbose_name=&quot;&#x5185;&#x7F51;IP&quot;)
+
+    model = models.CharField(max_length=128, default=&apos;&#x672A;&#x77E5;&#x578B;&#x53F7;&apos;,  verbose_name=&quot;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x578B;&#x53F7;&quot;)
+    firmware = models.CharField(max_length=128, blank=True, null=True, verbose_name=&quot;&#x8BBE;&#x5907;&#x56FA;&#x4EF6;&#x7248;&#x672C;&quot;)
+    port_num = models.SmallIntegerField(null=True, blank=True, verbose_name=&quot;&#x7AEF;&#x53E3;&#x4E2A;&#x6570;&quot;)
+    device_detail = models.TextField(null=True, blank=True, verbose_name=&quot;&#x8BE6;&#x7EC6;&#x914D;&#x7F6E;&quot;)
+
+    def __str__(self):
+        return &apos;%s--%s--%s &lt;sn:%s&gt;&apos; % (self.asset.name, self.get_sub_asset_type_display(), self.model, self.asset.sn)
+
+    class Meta:
+        verbose_name = &apos;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&apos;
+        verbose_name_plural = &quot;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&quot;
+
+
+class Software(models.Model):
+    &quot;&quot;&quot;
+    &#x53EA;&#x4FDD;&#x5B58;&#x4ED8;&#x8D39;&#x8D2D;&#x4E70;&#x7684;&#x8F6F;&#x4EF6;
+    &quot;&quot;&quot;
+    sub_asset_type_choice = (
+        (0, &apos;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&apos;),
+        (1, &apos;&#x529E;&#x516C;\&#x5F00;&#x53D1;&#x8F6F;&#x4EF6;&apos;),
+        (2, &apos;&#x4E1A;&#x52A1;&#x8F6F;&#x4EF6;&apos;),
+    )
+
+    sub_asset_type = models.SmallIntegerField(choices=sub_asset_type_choice, default=0, verbose_name=&quot;&#x8F6F;&#x4EF6;&#x7C7B;&#x578B;&quot;)
+    license_num = models.IntegerField(default=1, verbose_name=&quot;&#x6388;&#x6743;&#x6570;&#x91CF;&quot;)
+    version = models.CharField(max_length=64, unique=True, help_text=&apos;&#x4F8B;&#x5982;: RedHat release 7 (Final)&apos;,
+                               verbose_name=&apos;&#x8F6F;&#x4EF6;/&#x7CFB;&#x7EDF;&#x7248;&#x672C;&apos;)
+
+    def __str__(self):
+        return &apos;%s--%s&apos; % (self.get_sub_asset_type_display(), self.version)
+
+    class Meta:
+        verbose_name = &apos;&#x8F6F;&#x4EF6;/&#x7CFB;&#x7EDF;&apos;
+        verbose_name_plural = &quot;&#x8F6F;&#x4EF6;/&#x7CFB;&#x7EDF;&quot;
+</code></pre><p>&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>&#x6BCF;&#x53F0;&#x5B89;&#x5168;&#x3001;&#x7F51;&#x7EDC;&#x3001;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x90FD;&#x901A;&#x8FC7;&#x4E00;&#x5BF9;&#x4E00;&#x7684;&#x65B9;&#x5F0F;&#x552F;&#x4E00;&#x5173;&#x8054;&#x8FD9;&#x4E00;&#x4E2A;&#x8D44;&#x4EA7;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x901A;&#x8FC7;sub_asset_type&#x53C8;&#x7EC6;&#x5206;&#x8BBE;&#x5907;&#x7684;&#x5B50;&#x7C7B;&#x578B;</li>
+<li>&#x5BF9;&#x4E8E;&#x8F6F;&#x4EF6;&#xFF0C;&#x5B83;&#x6CA1;&#x6709;&#x7269;&#x7406;&#x5F62;&#x4F53;&#xFF0C;&#x56E0;&#x6B64;&#x65E0;&#x987B;&#x5173;&#x8054;&#x4E00;&#x4E2A;&#x8D44;&#x4EA7;&#x5BF9;&#x8C61;&#xFF1B;</li>
+<li>&#x8F6F;&#x4EF6;&#x53EA;&#x7BA1;&#x7406;&#x90A3;&#x4E9B;&#x5927;&#x578B;&#x7684;&#x6536;&#x8D39;&#x8F6F;&#x4EF6;&#xFF0C;&#x5173;&#x6CE8;&#x70B9;&#x662F;&#x6388;&#x6743;&#x6570;&#x91CF;&#x548C;&#x8F6F;&#x4EF6;&#x7248;&#x672C;&#x3002;&#x5BF9;&#x4E8E;&#x90A3;&#x4E9B;&#x5F00;&#x6E90;&#x7684;&#x6216;&#x8005;&#x514D;&#x8D39;&#x7684;&#x8F6F;&#x4EF6;&#xFF0C;&#x663E;&#x7136;&#x4E0D;&#x7B97;&#x516C;&#x53F8;&#x7684;&#x8D44;&#x4EA7;&#x3002;</li>
+</ul>
+<h3 id="4&#x673A;&#x623F;&#x3001;&#x5236;&#x9020;&#x5546;&#x3001;&#x4E1A;&#x52A1;&#x7EBF;&#x3001;&#x5408;&#x540C;&#x3001;&#x8D44;&#x4EA7;&#x6807;&#x7B7E;&#x7B49;&#x6570;&#x636E;&#x6A21;&#x578B;">4.&#x673A;&#x623F;&#x3001;&#x5236;&#x9020;&#x5546;&#x3001;&#x4E1A;&#x52A1;&#x7EBF;&#x3001;&#x5408;&#x540C;&#x3001;&#x8D44;&#x4EA7;&#x6807;&#x7B7E;&#x7B49;&#x6570;&#x636E;&#x6A21;&#x578B;</h3>
+<p>&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x662F;CMDB&#x4E2D;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6570;&#x636E;&#x8868;&#x5EFA;&#x7ACB;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x624B;&#x52A8;&#x6DFB;&#x52A0;&#x3002;</p>
+<pre><code>class IDC(models.Model):
+    &quot;&quot;&quot;&#x673A;&#x623F;&quot;&quot;&quot;
+    name = models.CharField(max_length=64, unique=True, verbose_name=&quot;&#x673A;&#x623F;&#x540D;&#x79F0;&quot;)
+    memo = models.CharField(max_length=128, blank=True, null=True, verbose_name=&apos;&#x5907;&#x6CE8;&apos;)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x673A;&#x623F;&apos;
+        verbose_name_plural = &quot;&#x673A;&#x623F;&quot;
+
+
+class Manufacturer(models.Model):
+    &quot;&quot;&quot;&#x5382;&#x5546;&quot;&quot;&quot;
+
+    name = models.CharField(&apos;&#x5382;&#x5546;&#x540D;&#x79F0;&apos;, max_length=64, unique=True)
+    telephone = models.CharField(&apos;&#x652F;&#x6301;&#x7535;&#x8BDD;&apos;, max_length=30, blank=True, null=True)
+    memo = models.CharField(&apos;&#x5907;&#x6CE8;&apos;, max_length=128, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x5382;&#x5546;&apos;
+        verbose_name_plural = &quot;&#x5382;&#x5546;&quot;
+
+
+class BusinessUnit(models.Model):
+    &quot;&quot;&quot;&#x4E1A;&#x52A1;&#x7EBF;&quot;&quot;&quot;
+
+    parent_unit = models.ForeignKey(&apos;self&apos;, blank=True, null=True, related_name=&apos;parent_level&apos;, on_delete=models.SET_NULL)
+    name = models.CharField(&apos;&#x4E1A;&#x52A1;&#x7EBF;&apos;, max_length=64, unique=True)
+    memo = models.CharField(&apos;&#x5907;&#x6CE8;&apos;, max_length=64, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x4E1A;&#x52A1;&#x7EBF;&apos;
+        verbose_name_plural = &quot;&#x4E1A;&#x52A1;&#x7EBF;&quot;
+
+
+class Contract(models.Model):
+    &quot;&quot;&quot;&#x5408;&#x540C;&quot;&quot;&quot;
+
+    sn = models.CharField(&apos;&#x5408;&#x540C;&#x53F7;&apos;, max_length=128, unique=True)
+    name = models.CharField(&apos;&#x5408;&#x540C;&#x540D;&#x79F0;&apos;, max_length=64)
+    memo = models.TextField(&apos;&#x5907;&#x6CE8;&apos;, blank=True, null=True)
+    price = models.IntegerField(&apos;&#x5408;&#x540C;&#x91D1;&#x989D;&apos;)
+    detail = models.TextField(&apos;&#x5408;&#x540C;&#x8BE6;&#x7EC6;&apos;, blank=True, null=True)
+    start_day = models.DateField(&apos;&#x5F00;&#x59CB;&#x65E5;&#x671F;&apos;, blank=True, null=True)
+    end_day = models.DateField(&apos;&#x5931;&#x6548;&#x65E5;&#x671F;&apos;, blank=True, null=True)
+    license_num = models.IntegerField(&apos;license&#x6570;&#x91CF;&apos;, blank=True, null=True)
+    c_day = models.DateField(&apos;&#x521B;&#x5EFA;&#x65E5;&#x671F;&apos;, auto_now_add=True)
+    m_day = models.DateField(&apos;&#x4FEE;&#x6539;&#x65E5;&#x671F;&apos;, auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x5408;&#x540C;&apos;
+        verbose_name_plural = &quot;&#x5408;&#x540C;&quot;
+
+
+class Tag(models.Model):
+    &quot;&quot;&quot;&#x6807;&#x7B7E;&quot;&quot;&quot;
+    name = models.CharField(&apos;&#x6807;&#x7B7E;&#x540D;&apos;, max_length=32, unique=True)
+    c_day = models.DateField(&apos;&#x521B;&#x5EFA;&#x65E5;&#x671F;&apos;, auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x6807;&#x7B7E;&apos;
+        verbose_name_plural = &quot;&#x6807;&#x7B7E;&quot;
+</code></pre><p>&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>&#x673A;&#x623F;&#x53EF;&#x4EE5;&#x6709;&#x5F88;&#x591A;&#x5176;&#x5B83;&#x5B57;&#x6BB5;&#xFF0C;&#x6BD4;&#x5982;&#x57CE;&#x5E02;&#x3001;&#x697C;&#x53F7;&#x3001;&#x697C;&#x5C42;&#x548C;&#x672A;&#x77E5;&#x7B49;&#x7B49;&#xFF0C;&#x5982;&#x6709;&#x9700;&#x8981;&#x53EF;&#x81EA;&#x884C;&#x6DFB;&#x52A0;&#xFF1B;</li>
+<li>&#x4E1A;&#x52A1;&#x7EBF;&#x53EF;&#x4EE5;&#x6709;&#x5B50;&#x4E1A;&#x52A1;&#x7EBF;&#xFF0C;&#x56E0;&#x6B64;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5916;&#x952E;&#x5173;&#x8054;&#x81EA;&#x8EAB;&#x6A21;&#x578B;&#xFF1B;</li>
+<li>&#x5408;&#x540C;&#x6A21;&#x578B;&#x4E3B;&#x8981;&#x5B58;&#x50A8;&#x8D22;&#x52A1;&#x90E8;&#x95E8;&#x5173;&#x5FC3;&#x7684;&#x6570;&#x636E;&#xFF1B;</li>
+<li>&#x8D44;&#x4EA7;&#x6807;&#x7B7E;&#x6A21;&#x578B;&#x4E0E;&#x8D44;&#x4EA7;&#x662F;&#x591A;&#x5BF9;&#x591A;&#x7684;&#x5173;&#x7CFB;&#x3002;</li>
+</ul>
+<h3 id="5cpu&#x6A21;&#x578B;">5.CPU&#x6A21;&#x578B;</h3>
+<p>&#x901A;&#x5E38;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x79CD;CPU&#x578B;&#x53F7;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;OneToOneField&#x552F;&#x4E00;&#x5173;&#x8054;&#x4E00;&#x4E2A;&#x8D44;&#x4EA7;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5916;&#x952E;&#x5173;&#x7CFB;&#x3002;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x7269;&#x7406;CPU&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x578B;&#x53F7;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x6BCF;&#x4E2A;&#x7269;&#x7406;CPU&#x53C8;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x591A;&#x6838;&#x3002;</p>
+<pre><code>class CPU(models.Model):
+    &quot;&quot;&quot;CPU&#x7EC4;&#x4EF6;&quot;&quot;&quot;
+
+    asset = models.OneToOneField(&apos;Asset&apos;, on_delete=models.CASCADE)  # &#x8BBE;&#x5907;&#x4E0A;&#x7684;cpu&#x80AF;&#x5B9A;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x5EFA;&#x7ACB;&#x591A;&#x4E2A;cpu&#x6570;&#x636E;&#xFF0C;&#x4E00;&#x6761;&#x5C31;&#x53EF;&#x4EE5;&#xFF0C;&#x56E0;&#x6B64;&#x4F7F;&#x7528;&#x4E00;&#x5BF9;&#x4E00;&#x3002;
+    cpu_model = models.CharField(&apos;CPU&#x578B;&#x53F7;&apos;, max_length=128, blank=True, null=True)
+    cpu_count = models.PositiveSmallIntegerField(&apos;&#x7269;&#x7406;CPU&#x4E2A;&#x6570;&apos;, default=1)
+    cpu_core_count = models.PositiveSmallIntegerField(&apos;CPU&#x6838;&#x6570;&apos;, default=1)
+
+    def __str__(self):
+        return self.asset.name + &quot;:   &quot; + self.cpu_model
+
+    class Meta:
+        verbose_name = &apos;CPU&apos;
+        verbose_name_plural = &quot;CPU&quot;
+</code></pre><h3 id="6ram&#x6A21;&#x578B;">6.RAM&#x6A21;&#x578B;</h3>
+<p>&#x67D0;&#x4E2A;&#x8D44;&#x4EA7;&#x4E2D;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x6761;&#x5185;&#x5B58;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x5FC5;&#x987B;&#x662F;&#x5916;&#x952E;&#x5173;&#x7CFB;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x5185;&#x5B58;&#x7684;sn&#x53F7;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x83B7;&#x5F97;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x5185;&#x5B58;&#x6240;&#x5728;&#x7684;&#x63D2;&#x69FD;&#x672A;&#x77E5;&#x6765;&#x552F;&#x4E00;&#x786E;&#x5B9A;&#x6BCF;&#x6761;&#x5185;&#x5B58;&#x3002;&#x56E0;&#x6B64;&#xFF0C;<code>unique_together = (&apos;asset&apos;, &apos;slot&apos;)</code>&#x8FD9;&#x6761;&#x8BBE;&#x7F6E;&#x975E;&#x5E38;&#x5173;&#x952E;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x5185;&#x5B58;&#x7684;&#x4E3B;&#x952E;&#x4E86;&#xFF0C;&#x6BCF;&#x6761;&#x5185;&#x5B58;&#x6570;&#x636E;&#x5FC5;&#x987B;&#x5305;&#x542B;slot&#x5B57;&#x6BB5;&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x4E0D;&#x5408;&#x6CD5;&#x3002;</p>
+<pre><code>class RAM(models.Model):
+    &quot;&quot;&quot;&#x5185;&#x5B58;&#x7EC4;&#x4EF6;&quot;&quot;&quot;
+
+    asset = models.ForeignKey(&apos;Asset&apos;, on_delete=models.CASCADE)
+    sn = models.CharField(&apos;SN&#x53F7;&apos;, max_length=128, blank=True, null=True)
+    model = models.CharField(&apos;&#x5185;&#x5B58;&#x578B;&#x53F7;&apos;, max_length=128, blank=True, null=True)
+    manufacturer = models.CharField(&apos;&#x5185;&#x5B58;&#x5236;&#x9020;&#x5546;&apos;, max_length=128, blank=True, null=True)
+    slot = models.CharField(&apos;&#x63D2;&#x69FD;&apos;, max_length=64)
+    capacity = models.IntegerField(&apos;&#x5185;&#x5B58;&#x5927;&#x5C0F;(GB)&apos;, blank=True, null=True)
+
+    def __str__(self):
+        return &apos;%s: %s: %s: %s&apos; % (self.asset.name, self.model, self.slot, self.capacity)
+
+    class Meta:
+        verbose_name = &apos;&#x5185;&#x5B58;&apos;
+        verbose_name_plural = &quot;&#x5185;&#x5B58;&quot;
+        unique_together = (&apos;asset&apos;, &apos;slot&apos;)  # &#x540C;&#x4E00;&#x8D44;&#x4EA7;&#x4E0B;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x6839;&#x636E;&#x63D2;&#x69FD;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x5FC5;&#x987B;&#x552F;&#x4E00;
+</code></pre><h3 id="7-&#x786C;&#x76D8;&#x6A21;&#x578B;">7. &#x786C;&#x76D8;&#x6A21;&#x578B;</h3>
+<p>&#x4E0E;&#x5185;&#x5B58;&#x76F8;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x786C;&#x76D8;&#x4E5F;&#x53EF;&#x80FD;&#x6709;&#x5F88;&#x591A;&#x5757;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x662F;&#x5916;&#x952E;&#x5173;&#x7CFB;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x786C;&#x76D8;&#x901A;&#x5E38;&#x90FD;&#x80FD;&#x83B7;&#x53D6;&#x5230;sn&#x53F7;&#xFF0C;&#x4F7F;&#x7528;sn&#x4F5C;&#x4E3A;&#x552F;&#x4E00;&#x503C;&#x6BD4;&#x8F83;&#x5408;&#x9002;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;<code>unique_together = (&apos;asset&apos;, &apos;sn&apos;)</code>&#x3002;&#x786C;&#x76D8;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x8FD9;&#x91CC;&#x8BBE;&#x7F6E;&#x4E86;4&#x79CD;&#x4EE5;&#x53CA;unknown&#xFF0C;&#x53EF;&#x81EA;&#x884C;&#x6DFB;&#x52A0;&#x5176;&#x5B83;&#x7C7B;&#x522B;&#x3002;</p>
+<pre><code>class Disk(models.Model):
+    &quot;&quot;&quot;&#x786C;&#x76D8;&#x8BBE;&#x5907;&quot;&quot;&quot;
+
+    disk_interface_type_choice = (
+        (&apos;SATA&apos;, &apos;SATA&apos;),
+        (&apos;SAS&apos;, &apos;SAS&apos;),
+        (&apos;SCSI&apos;, &apos;SCSI&apos;),
+        (&apos;SSD&apos;, &apos;SSD&apos;),
+        (&apos;unknown&apos;, &apos;unknown&apos;),
+    )
+
+    asset = models.ForeignKey(&apos;Asset&apos;, on_delete=models.CASCADE)
+    sn = models.CharField(&apos;&#x786C;&#x76D8;SN&#x53F7;&apos;, max_length=128)
+    slot = models.CharField(&apos;&#x6240;&#x5728;&#x63D2;&#x69FD;&#x4F4D;&apos;, max_length=64, blank=True, null=True)
+    model = models.CharField(&apos;&#x78C1;&#x76D8;&#x578B;&#x53F7;&apos;, max_length=128, blank=True, null=True)
+    manufacturer = models.CharField(&apos;&#x78C1;&#x76D8;&#x5236;&#x9020;&#x5546;&apos;, max_length=128, blank=True, null=True)
+    capacity = models.FloatField(&apos;&#x78C1;&#x76D8;&#x5BB9;&#x91CF;(GB)&apos;, blank=True, null=True)
+    interface_type = models.CharField(&apos;&#x63A5;&#x53E3;&#x7C7B;&#x578B;&apos;, max_length=16, choices=disk_interface_type_choice, default=&apos;unknown&apos;)
+
+    def __str__(self):
+        return &apos;%s:  %s:  %s:  %sGB&apos; % (self.asset.name, self.model, self.slot, self.capacity)
+
+    class Meta:
+        verbose_name = &apos;&#x786C;&#x76D8;&apos;
+        verbose_name_plural = &quot;&#x786C;&#x76D8;&quot;
+        unique_together = (&apos;asset&apos;, &apos;sn&apos;)
+</code></pre><h3 id="8&#x7F51;&#x5361;&#x6A21;&#x578B;">8.&#x7F51;&#x5361;&#x6A21;&#x578B;</h3>
+<p>&#x4E00;&#x53F0;&#x8BBE;&#x5907;&#x4E2D;&#x53EF;&#x80FD;&#x6709;&#x5F88;&#x591A;&#x5757;&#x7F51;&#x5361;&#xFF0C;&#x6240;&#x4EE5;&#x7F51;&#x5361;&#x4E0E;&#x8D44;&#x4EA7;&#x4E5F;&#x662F;&#x5916;&#x952E;&#x7684;&#x5173;&#x7CFB;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x7531;&#x4E8E;&#x865A;&#x62DF;&#x673A;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x7F51;&#x5361;&#x7684;mac&#x5730;&#x5740;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x751F;&#x91CD;&#x590D;&#xFF0C;&#x65E0;&#x6CD5;&#x552F;&#x4E00;&#x786E;&#x5B9A;&#x67D0;&#x5757;&#x7F51;&#x5361;&#xFF0C;&#x56E0;&#x6B64;&#x901A;&#x8FC7;&#x7F51;&#x5361;&#x578B;&#x53F7;&#x52A0;mac&#x5730;&#x5740;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x552F;&#x4E00;&#x786E;&#x5B9A;&#x7F51;&#x5361;&#x3002;</p>
+<pre><code>class NIC(models.Model):
+    &quot;&quot;&quot;&#x7F51;&#x5361;&#x7EC4;&#x4EF6;&quot;&quot;&quot;
+
+    asset = models.ForeignKey(&apos;Asset&apos;, on_delete=models.CASCADE)  # &#x6CE8;&#x610F;&#x8981;&#x7528;&#x5916;&#x952E;
+    name = models.CharField(&apos;&#x7F51;&#x5361;&#x540D;&#x79F0;&apos;, max_length=64, blank=True, null=True)
+    model = models.CharField(&apos;&#x7F51;&#x5361;&#x578B;&#x53F7;&apos;, max_length=128)
+    mac = models.CharField(&apos;MAC&#x5730;&#x5740;&apos;, max_length=64)  # &#x865A;&#x62DF;&#x673A;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x540C;&#x6837;&#x7684;mac&#x5730;&#x5740;
+    ip_address = models.GenericIPAddressField(&apos;IP&#x5730;&#x5740;&apos;, blank=True, null=True)
+    net_mask = models.CharField(&apos;&#x63A9;&#x7801;&apos;, max_length=64, blank=True, null=True)
+    bonding = models.CharField(&apos;&#x7ED1;&#x5B9A;&#x5730;&#x5740;&apos;, max_length=64, blank=True, null=True)
+
+    def __str__(self):
+        return &apos;%s:  %s:  %s&apos; % (self.asset.name, self.model, self.mac)
+
+    class Meta:
+        verbose_name = &apos;&#x7F51;&#x5361;&apos;
+        verbose_name_plural = &quot;&#x7F51;&#x5361;&quot;
+        unique_together = (&apos;asset&apos;, &apos;model&apos;, &apos;mac&apos;)  # &#x8D44;&#x4EA7;&#x3001;&#x578B;&#x53F7;&#x548C;mac&#x5FC5;&#x987B;&#x8054;&#x5408;&#x552F;&#x4E00;&#x3002;&#x9632;&#x6B62;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x7684;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x3002;
+</code></pre><h3 id="9-&#x5176;&#x5B83;&#x6A21;&#x578B;">9. &#x5176;&#x5B83;&#x6A21;&#x578B;</h3>
+<p>&#x6BD4;&#x5982;&#x673A;&#x623F;&#x3001;&#x5382;&#x5546;&#x3001;&#x6807;&#x7B7E;&#x3001;&#x4E1A;&#x52A1;&#x7EBF;&#x3001;&#x5408;&#x540C;&#x7B49;&#x5176;&#x5B83;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code>class IDC(models.Model):
+    &quot;&quot;&quot;&#x673A;&#x623F;&quot;&quot;&quot;
+    name = models.CharField(max_length=64, unique=True, verbose_name=&quot;&#x673A;&#x623F;&#x540D;&#x79F0;&quot;)
+    memo = models.CharField(max_length=128, blank=True, null=True, verbose_name=&apos;&#x5907;&#x6CE8;&apos;)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x673A;&#x623F;&apos;
+        verbose_name_plural = &quot;&#x673A;&#x623F;&quot;
+
+
+class Manufacturer(models.Model):
+    &quot;&quot;&quot;&#x5382;&#x5546;&quot;&quot;&quot;
+
+    name = models.CharField(&apos;&#x5382;&#x5546;&#x540D;&#x79F0;&apos;, max_length=64, unique=True)
+    telephone = models.CharField(&apos;&#x652F;&#x6301;&#x7535;&#x8BDD;&apos;, max_length=30, blank=True, null=True)
+    memo = models.CharField(&apos;&#x5907;&#x6CE8;&apos;, max_length=128, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x5382;&#x5546;&apos;
+        verbose_name_plural = &quot;&#x5382;&#x5546;&quot;
+
+
+class BusinessUnit(models.Model):
+    &quot;&quot;&quot;&#x4E1A;&#x52A1;&#x7EBF;&quot;&quot;&quot;
+
+    parent_unit = models.ForeignKey(&apos;self&apos;, blank=True, null=True, related_name=&apos;parent_level&apos;,
+                                    on_delete=models.CASCADE)
+    name = models.CharField(&apos;&#x4E1A;&#x52A1;&#x7EBF;&#x540D;&#x79F0;&apos;, max_length=64, unique=True)
+    memo = models.CharField(&apos;&#x5907;&#x6CE8;&apos;, max_length=64, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x4E1A;&#x52A1;&#x7EBF;&apos;
+        verbose_name_plural = &quot;&#x4E1A;&#x52A1;&#x7EBF;&quot;
+
+
+class Contract(models.Model):
+    &quot;&quot;&quot;&#x5408;&#x540C;&quot;&quot;&quot;
+
+    sn = models.CharField(&apos;&#x5408;&#x540C;&#x53F7;&apos;, max_length=128, unique=True)
+    name = models.CharField(&apos;&#x5408;&#x540C;&#x540D;&#x79F0;&apos;, max_length=64)
+    memo = models.TextField(&apos;&#x5907;&#x6CE8;&apos;, blank=True, null=True)
+    price = models.IntegerField(&apos;&#x5408;&#x540C;&#x91D1;&#x989D;&apos;)
+    detail = models.TextField(&apos;&#x5408;&#x540C;&#x8BE6;&#x7EC6;&apos;, blank=True, null=True)
+    start_day = models.DateField(&apos;&#x5F00;&#x59CB;&#x65E5;&#x671F;&apos;, blank=True, null=True)
+    end_day = models.DateField(&apos;&#x5931;&#x6548;&#x65E5;&#x671F;&apos;, blank=True, null=True)
+    license_num = models.IntegerField(&apos;license&#x6570;&#x91CF;&apos;, blank=True, null=True)
+    c_day = models.DateField(&apos;&#x521B;&#x5EFA;&#x65E5;&#x671F;&apos;, auto_now_add=True)
+    m_day = models.DateField(&apos;&#x4FEE;&#x6539;&#x65E5;&#x671F;&apos;, auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x5408;&#x540C;&apos;
+        verbose_name_plural = &quot;&#x5408;&#x540C;&quot;
+
+
+class Tag(models.Model):
+    &quot;&quot;&quot;&#x6807;&#x7B7E;&quot;&quot;&quot;
+    name = models.CharField(&apos;&#x6807;&#x7B7E;&#x540D;&apos;, max_length=32, unique=True)
+    c_day = models.DateField(&apos;&#x521B;&#x5EFA;&#x65E5;&#x671F;&apos;, auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x6807;&#x7B7E;&apos;
+        verbose_name_plural = &quot;&#x6807;&#x7B7E;&quot;
+</code></pre><h3 id="10&#x65E5;&#x5FD7;&#x6A21;&#x578B;">10.&#x65E5;&#x5FD7;&#x6A21;&#x578B;</h3>
+<p>CMDB&#x5FC5;&#x987B;&#x8BB0;&#x5F55;&#x5404;&#x79CD;&#x65E5;&#x5FD7;&#xFF0C;&#x8FD9;&#x662F;&#x6BEB;&#x65E0;&#x7591;&#x95EE;&#x7684;&#xFF01;&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x8981;&#x8BB0;&#x5F55;&#x4E8B;&#x4EF6;&#x540D;&#x79F0;&#x3001;&#x7C7B;&#x578B;&#x3001;&#x5173;&#x8054;&#x7684;&#x8D44;&#x4EA7;&#x3001;&#x5B50;&#x4E8B;&#x4EF6;&#x3001;&#x4E8B;&#x4EF6;&#x8BE6;&#x60C5;&#x3001;&#x8C01;&#x5BFC;&#x81F4;&#x7684;&#x3001;&#x53D1;&#x751F;&#x65F6;&#x95F4;&#x3002;&#x8FD9;&#x4E9B;&#x90FD;&#x5F88;&#x91CD;&#x8981;&#xFF01;</p>
+<p>&#x5C24;&#x5176;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x4E8B;&#x4EF6;&#x65E5;&#x5FD7;&#x4E0D;&#x80FD;&#x968F;&#x7740;&#x5173;&#x8054;&#x8D44;&#x4EA7;&#x7684;&#x5220;&#x9664;&#x88AB;&#x4E00;&#x5E76;&#x5220;&#x9664;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x8BBE;&#x7F6E;<code>on_delete=models.SET_NULL</code>&#x7684;&#x610F;&#x4E49;&#xFF01;</p>
+<pre><code>class EventLog(models.Model):
+    &quot;&quot;&quot;
+    &#x65E5;&#x5FD7;.
+    &#x5728;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x88AB;&#x5220;&#x9664;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0D;&#x80FD;&#x4E00;&#x5E76;&#x5220;&#x9664;&#xFF0C;&#x9700;&#x4FDD;&#x7559;&#x65E5;&#x5FD7;&#x3002;
+    &#x56E0;&#x6B64;&#xFF0C;on_delete=models.SET_NULL
+    &quot;&quot;&quot;
+
+    name = models.CharField(&apos;&#x4E8B;&#x4EF6;&#x540D;&#x79F0;&apos;, max_length=128)
+    event_type_choice = (
+        (0, &apos;&#x5176;&#x5B83;&apos;),
+        (1, &apos;&#x786C;&#x4EF6;&#x53D8;&#x66F4;&apos;),
+        (2, &apos;&#x65B0;&#x589E;&#x914D;&#x4EF6;&apos;),
+        (3, &apos;&#x8BBE;&#x5907;&#x4E0B;&#x7EBF;&apos;),
+        (4, &apos;&#x8BBE;&#x5907;&#x4E0A;&#x7EBF;&apos;),
+        (5, &apos;&#x5B9A;&#x671F;&#x7EF4;&#x62A4;&apos;),
+        (6, &apos;&#x4E1A;&#x52A1;&#x4E0A;&#x7EBF;\&#x66F4;&#x65B0;\&#x53D8;&#x66F4;&apos;),
+    )
+    asset = models.ForeignKey(&apos;Asset&apos;, blank=True, null=True, on_delete=models.SET_NULL)  # &#x5F53;&#x8D44;&#x4EA7;&#x5BA1;&#x6279;&#x6210;&#x529F;&#x65F6;&#x6709;&#x8FD9;&#x9879;&#x6570;&#x636E;
+    new_asset = models.ForeignKey(&apos;NewAssetApprovalZone&apos;, blank=True, null=True, on_delete=models.SET_NULL)  # &#x5F53;&#x8D44;&#x4EA7;&#x5BA1;&#x6279;&#x5931;&#x8D25;&#x65F6;&#x6709;&#x8FD9;&#x9879;&#x6570;&#x636E;
+    event_type = models.SmallIntegerField(&apos;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&apos;, choices=event_type_choice, default=4)
+    component = models.CharField(&apos;&#x4E8B;&#x4EF6;&#x5B50;&#x9879;&apos;, max_length=256, blank=True, null=True)
+    detail = models.TextField(&apos;&#x4E8B;&#x4EF6;&#x8BE6;&#x60C5;&apos;)
+    date = models.DateTimeField(&apos;&#x4E8B;&#x4EF6;&#x65F6;&#x95F4;&apos;, auto_now_add=True)
+    user = models.ForeignKey(User, blank=True, null=True, verbose_name=&apos;&#x4E8B;&#x4EF6;&#x6267;&#x884C;&#x4EBA;&apos;, on_delete=models.SET_NULL)  # &#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x8D44;&#x4EA7;&#x6570;&#x636E;&#x65F6;&#x6CA1;&#x6709;&#x6267;&#x884C;&#x4EBA;
+    memo = models.TextField(&apos;&#x5907;&#x6CE8;&apos;, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x4E8B;&#x4EF6;&#x7EAA;&#x5F55;&apos;
+        verbose_name_plural = &quot;&#x4E8B;&#x4EF6;&#x7EAA;&#x5F55;&quot;
+</code></pre><h3 id="11&#x65B0;&#x8D44;&#x4EA7;&#x5F85;&#x5BA1;&#x6279;&#x533A;&#x6A21;&#x578B;">11.&#x65B0;&#x8D44;&#x4EA7;&#x5F85;&#x5BA1;&#x6279;&#x533A;&#x6A21;&#x578B;</h3>
+<p>&#x65B0;&#x8D44;&#x4EA7;&#x7684;&#x5230;&#x6765;&#xFF0C;&#x5E76;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x52A0;&#x5165;CMDB&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x800C;&#x662F;&#x8981;&#x901A;&#x8FC7;&#x7BA1;&#x7406;&#x5458;&#x5BA1;&#x6279;&#x540E;&#xFF0C;&#x624D;&#x53EF;&#x4EE5;&#x4E0A;&#x7EBF;&#x7684;&#x3002;&#x8FD9;&#x5C31;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x65B0;&#x8D44;&#x4EA7;&#x7684;&#x5F85;&#x5BA1;&#x6279;&#x533A;&#x3002;&#x5728;&#x8BE5;&#x533A;&#x4E2D;&#xFF0C;&#x4EE5;&#x8D44;&#x4EA7;&#x7684;sn&#x53F7;&#x4F5C;&#x4E3A;&#x552F;&#x4E00;&#x503C;&#xFF0C;&#x786E;&#x5B9A;&#x4E0D;&#x540C;&#x7684;&#x8D44;&#x4EA7;&#x3002;&#x9664;&#x4E86;&#x5173;&#x952E;&#x7684;&#x5305;&#x542B;&#x8D44;&#x4EA7;&#x6240;&#x6709;&#x4FE1;&#x606F;&#x7684;data&#x5B57;&#x6BB5;&#xFF0C;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x5BA1;&#x6279;&#x5458;&#x67E5;&#x770B;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x8BBE;&#x8BA1;&#x4E86;&#x4E00;&#x4E9B;&#x5382;&#x5546;&#x3001;&#x578B;&#x53F7;&#x3001;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x3001;CPU&#x7C7B;&#x578B;&#x7B49;&#x5B57;&#x6BB5;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x8D44;&#x4EA7;&#x8FD8;&#x672A;&#x5BA1;&#x6279;&#xFF0C;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x5C31;&#x5DF2;&#x7ECF;&#x53D1;&#x8FC7;&#x6765;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x65E5;&#x671F;&#x5B57;&#x6BB5;&#x3002;</p>
+<pre><code>class NewAssetApprovalZone(models.Model):
+    &quot;&quot;&quot;&#x65B0;&#x8D44;&#x4EA7;&#x5F85;&#x5BA1;&#x6279;&#x533A;&quot;&quot;&quot;
+
+    sn = models.CharField(&apos;&#x8D44;&#x4EA7;SN&#x53F7;&apos;, max_length=128, unique=True)  # &#x6B64;&#x5B57;&#x6BB5;&#x5FC5;&#x586B;
+    asset_type_choice = (
+        (&apos;server&apos;, &apos;&#x670D;&#x52A1;&#x5668;&apos;),
+        (&apos;networkdevice&apos;, &apos;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&apos;),
+        (&apos;storagedevice&apos;, &apos;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&apos;),
+        (&apos;securitydevice&apos;, &apos;&#x5B89;&#x5168;&#x8BBE;&#x5907;&apos;),
+        (&apos;software&apos;, &apos;&#x8F6F;&#x4EF6;&#x8D44;&#x4EA7;&apos;),
+    )
+    asset_type = models.CharField(choices=asset_type_choice, default=&apos;server&apos;, max_length=64, blank=True, null=True,
+                                  verbose_name=&apos;&#x8D44;&#x4EA7;&#x7C7B;&#x578B;&apos;)
+
+    manufacturer = models.CharField(max_length=64, blank=True, null=True, verbose_name=&apos;&#x751F;&#x4EA7;&#x5382;&#x5546;&apos;)
+    model = models.CharField(max_length=128, blank=True, null=True, verbose_name=&apos;&#x578B;&#x53F7;&apos;)
+    ram_size = models.PositiveIntegerField(blank=True, null=True, verbose_name=&apos;&#x5185;&#x5B58;&#x5927;&#x5C0F;&apos;)
+    cpu_model = models.CharField(max_length=128, blank=True, null=True, verbose_name=&apos;CPU&#x578B;&#x53F7;&apos;)
+    cpu_count = models.PositiveSmallIntegerField(&apos;CPU&#x7269;&#x7406;&#x6570;&#x91CF;&apos;, blank=True, null=True)
+    cpu_core_count = models.PositiveSmallIntegerField(&apos;CPU&#x6838;&#x5FC3;&#x6570;&#x91CF;&apos;, blank=True, null=True)
+    os_distribution = models.CharField(&apos;&#x53D1;&#x884C;&#x5546;&apos;, max_length=64, blank=True, null=True)
+    os_type = models.CharField(&apos;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&apos;, max_length=64, blank=True, null=True)
+    os_release = models.CharField(&apos;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x53F7;&apos;, max_length=64, blank=True, null=True)
+
+    data = models.TextField(&apos;&#x8D44;&#x4EA7;&#x6570;&#x636E;&apos;)  # &#x6B64;&#x5B57;&#x6BB5;&#x5FC5;&#x586B;
+
+    c_time = models.DateTimeField(&apos;&#x6C47;&#x62A5;&#x65E5;&#x671F;&apos;, auto_now_add=True)
+    m_time = models.DateTimeField(&apos;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x65E5;&#x671F;&apos;, auto_now=True)
+    approved = models.BooleanField(&apos;&#x662F;&#x5426;&#x6279;&#x51C6;&apos;, default=False)
+
+    def __str__(self):
+        return self.sn
+
+    class Meta:
+        verbose_name = &apos;&#x65B0;&#x4E0A;&#x7EBF;&#x5F85;&#x6279;&#x51C6;&#x8D44;&#x4EA7;&apos;
+        verbose_name_plural = &quot;&#x65B0;&#x4E0A;&#x7EBF;&#x5F85;&#x6279;&#x51C6;&#x8D44;&#x4EA7;&quot;
+        ordering = [&apos;-c_time&apos;]
+</code></pre><h3 id="11&#x603B;&#x7ED3;">11.&#x603B;&#x7ED3;</h3>
+<p>&#x901A;&#x8FC7;&#x524D;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x51FA;CMDB&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x8BBE;&#x8BA1;&#x975E;&#x5E38;&#x590D;&#x6742;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x8FD8;&#x662F;&#x7701;&#x7565;&#x4E86;&#x5F88;&#x591A;&#x4E0D;&#x592A;&#x91CD;&#x8981;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x5C31;&#x8FD9;&#x6837;&#x603B;&#x5171;&#x90FD;&#x6709;400&#x591A;&#x884C;&#x4EE3;&#x7801;&#x3002;&#x5176;&#x4E2D;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x9700;&#x8981;&#x4FDD;&#x5B58;&#x4EC0;&#x4E48;&#x5B57;&#x6BB5;&#x3001;&#x91C7;&#x7528;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x3001;&#x4EC0;&#x4E48;&#x5173;&#x8054;&#x5173;&#x7CFB;&#x3001;&#x5B9A;&#x4E49;&#x54EA;&#x4E9B;&#x53C2;&#x6570;&#x3001;&#x6570;&#x636E;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;&#xFF0C;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x8E29;&#x8FC7;&#x5404;&#x79CD;&#x5751;&#x540E;&#x603B;&#x7ED3;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x4E0D;&#x662F;&#x968F;&#x4FBF;&#x5C31;&#x80FD;&#x5B9A;&#x4E49;&#x7684;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x8BF7;&#x52A1;&#x5FC5;&#x8BE6;&#x7EC6;&#x9605;&#x8BFB;&#x548C;&#x63E3;&#x6469;&#x8FD9;&#x4E9B;&#x6A21;&#x578B;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x4E00;&#x5207;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x4E4B;&#x540E;&#xFF0C;&#x6CE8;&#x518C;app&#xFF0C;&#x7136;&#x540E;makemigrations&#x4EE5;&#x53CA;migrate!</p>
+<p>&#x6700;&#x540E;&#x9644;&#x4E0A;&#x6574;&#x4E2A;models.py&#x6587;&#x4EF6;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>from django.db import models
+from django.contrib.auth.models import User
+# Create your models here.
+
+
+class Asset(models.Model):
+    &quot;&quot;&quot;    &#x6240;&#x6709;&#x8D44;&#x4EA7;&#x7684;&#x5171;&#x6709;&#x6570;&#x636E;&#x8868;    &quot;&quot;&quot;
+
+    asset_type_choice = (
+        (&apos;server&apos;, &apos;&#x670D;&#x52A1;&#x5668;&apos;),
+        (&apos;networkdevice&apos;, &apos;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&apos;),
+        (&apos;storagedevice&apos;, &apos;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&apos;),
+        (&apos;securitydevice&apos;, &apos;&#x5B89;&#x5168;&#x8BBE;&#x5907;&apos;),
+        (&apos;software&apos;, &apos;&#x8F6F;&#x4EF6;&#x8D44;&#x4EA7;&apos;),
+    )
+
+    asset_status = (
+        (0, &apos;&#x5728;&#x7EBF;&apos;),
+        (1, &apos;&#x4E0B;&#x7EBF;&apos;),
+        (2, &apos;&#x672A;&#x77E5;&apos;),
+        (3, &apos;&#x6545;&#x969C;&apos;),
+        (4, &apos;&#x5907;&#x7528;&apos;),
+        )
+
+    asset_type = models.CharField(choices=asset_type_choice, max_length=64, default=&apos;server&apos;, verbose_name=&quot;&#x8D44;&#x4EA7;&#x7C7B;&#x578B;&quot;)
+    name = models.CharField(max_length=64, unique=True, verbose_name=&quot;&#x8D44;&#x4EA7;&#x540D;&#x79F0;&quot;)     # &#x4E0D;&#x53EF;&#x91CD;&#x590D;
+    sn = models.CharField(max_length=128, unique=True, verbose_name=&quot;&#x8D44;&#x4EA7;&#x5E8F;&#x5217;&#x53F7;&quot;)  # &#x4E0D;&#x53EF;&#x91CD;&#x590D;
+    business_unit = models.ForeignKey(&apos;BusinessUnit&apos;, null=True, blank=True, verbose_name=&apos;&#x6240;&#x5C5E;&#x4E1A;&#x52A1;&#x7EBF;&apos;,
+                                      on_delete=models.SET_NULL)
+    status = models.SmallIntegerField(choices=asset_status, default=0, verbose_name=&apos;&#x8BBE;&#x5907;&#x72B6;&#x6001;&apos;)
+
+    manufacturer = models.ForeignKey(&apos;Manufacturer&apos;, null=True, blank=True, verbose_name=&apos;&#x5236;&#x9020;&#x5546;&apos;,
+                                     on_delete=models.SET_NULL)
+    manage_ip = models.GenericIPAddressField(null=True, blank=True, verbose_name=&apos;&#x7BA1;&#x7406;IP&apos;)
+    tags = models.ManyToManyField(&apos;Tag&apos;, blank=True, verbose_name=&apos;&#x6807;&#x7B7E;&apos;)
+    admin = models.ForeignKey(User, null=True, blank=True, verbose_name=&apos;&#x8D44;&#x4EA7;&#x7BA1;&#x7406;&#x5458;&apos;, related_name=&apos;admin&apos;,
+                              on_delete=models.SET_NULL)
+    idc = models.ForeignKey(&apos;IDC&apos;, null=True, blank=True, verbose_name=&apos;&#x6240;&#x5728;&#x673A;&#x623F;&apos;, on_delete=models.SET_NULL)
+    contract = models.ForeignKey(&apos;Contract&apos;, null=True, blank=True, verbose_name=&apos;&#x5408;&#x540C;&apos;, on_delete=models.SET_NULL)
+
+    purchase_day = models.DateField(null=True, blank=True, verbose_name=&quot;&#x8D2D;&#x4E70;&#x65E5;&#x671F;&quot;)
+    expire_day = models.DateField(null=True, blank=True, verbose_name=&quot;&#x8FC7;&#x4FDD;&#x65E5;&#x671F;&quot;)
+    price = models.FloatField(null=True, blank=True, verbose_name=&quot;&#x4EF7;&#x683C;&quot;)
+
+    approved_by = models.ForeignKey(User, null=True, blank=True, verbose_name=&apos;&#x6279;&#x51C6;&#x4EBA;&apos;, related_name=&apos;approved_by&apos;,
+                                    on_delete=models.SET_NULL)
+
+    memo = models.TextField(null=True, blank=True, verbose_name=&apos;&#x5907;&#x6CE8;&apos;)
+    c_time = models.DateTimeField(auto_now_add=True, verbose_name=&apos;&#x6279;&#x51C6;&#x65E5;&#x671F;&apos;)
+    m_time = models.DateTimeField(auto_now=True, verbose_name=&apos;&#x66F4;&#x65B0;&#x65E5;&#x671F;&apos;)
+
+    def __str__(self):
+        return &apos;&lt;%s&gt;  %s&apos; % (self.get_asset_type_display(), self.name)
+
+    class Meta:
+        verbose_name = &apos;&#x8D44;&#x4EA7;&#x603B;&#x8868;&apos;
+        verbose_name_plural = &quot;&#x8D44;&#x4EA7;&#x603B;&#x8868;&quot;
+        ordering = [&apos;-c_time&apos;]
+
+
+class Server(models.Model):
+    &quot;&quot;&quot;&#x670D;&#x52A1;&#x5668;&#x8BBE;&#x5907;&quot;&quot;&quot;
+
+    sub_asset_type_choice = (
+        (0, &apos;PC&#x670D;&#x52A1;&#x5668;&apos;),
+        (1, &apos;&#x5200;&#x7247;&#x673A;&apos;),
+        (2, &apos;&#x5C0F;&#x578B;&#x673A;&apos;),
+    )
+
+    created_by_choice = (
+        (&apos;auto&apos;, &apos;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&apos;),
+        (&apos;manual&apos;, &apos;&#x624B;&#x5DE5;&#x5F55;&#x5165;&apos;),
+    )
+
+    asset = models.OneToOneField(&apos;Asset&apos;, on_delete=models.CASCADE)  # &#x975E;&#x5E38;&#x5173;&#x952E;&#x7684;&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x8054;&#xFF01;asset&#x88AB;&#x5220;&#x9664;&#x7684;&#x65F6;&#x5019;&#x4E00;&#x5E76;&#x5220;&#x9664;server
+    sub_asset_type = models.SmallIntegerField(choices=sub_asset_type_choice, default=0, verbose_name=&quot;&#x670D;&#x52A1;&#x5668;&#x7C7B;&#x578B;&quot;)
+    created_by = models.CharField(choices=created_by_choice, max_length=32, default=&apos;auto&apos;, verbose_name=&quot;&#x6DFB;&#x52A0;&#x65B9;&#x5F0F;&quot;)
+    hosted_on = models.ForeignKey(&apos;self&apos;, related_name=&apos;hosted_on_server&apos;,
+                                  blank=True, null=True, verbose_name=&quot;&#x5BBF;&#x4E3B;&#x673A;&quot;, on_delete=models.CASCADE)  # &#x865A;&#x62DF;&#x673A;&#x4E13;&#x7528;&#x5B57;&#x6BB5;
+    model = models.CharField(max_length=128, null=True, blank=True, verbose_name=&apos;&#x670D;&#x52A1;&#x5668;&#x578B;&#x53F7;&apos;)
+    raid_type = models.CharField(max_length=512, blank=True, null=True, verbose_name=&apos;Raid&#x7C7B;&#x578B;&apos;)
+
+    os_type = models.CharField(&apos;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&apos;, max_length=64, blank=True, null=True)
+    os_distribution = models.CharField(&apos;&#x53D1;&#x884C;&#x5546;&apos;, max_length=64, blank=True, null=True)
+    os_release = models.CharField(&apos;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&apos;, max_length=64, blank=True, null=True)
+
+    def __str__(self):
+        return &apos;%s--%s--%s &lt;sn:%s&gt;&apos; % (self.asset.name, self.get_sub_asset_type_display(), self.model, self.asset.sn)
+
+    class Meta:
+        verbose_name = &apos;&#x670D;&#x52A1;&#x5668;&apos;
+        verbose_name_plural = &quot;&#x670D;&#x52A1;&#x5668;&quot;
+
+
+class SecurityDevice(models.Model):
+    &quot;&quot;&quot;&#x5B89;&#x5168;&#x8BBE;&#x5907;&quot;&quot;&quot;
+
+    sub_asset_type_choice = (
+        (0, &apos;&#x9632;&#x706B;&#x5899;&apos;),
+        (1, &apos;&#x5165;&#x4FB5;&#x68C0;&#x6D4B;&#x8BBE;&#x5907;&apos;),
+        (2, &apos;&#x4E92;&#x8054;&#x7F51;&#x7F51;&#x5173;&apos;),
+        (4, &apos;&#x8FD0;&#x7EF4;&#x5BA1;&#x8BA1;&#x7CFB;&#x7EDF;&apos;),
+    )
+
+    asset = models.OneToOneField(&apos;Asset&apos;, on_delete=models.CASCADE)
+    sub_asset_type = models.SmallIntegerField(choices=sub_asset_type_choice, default=0, verbose_name=&quot;&#x5B89;&#x5168;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&quot;)
+    model = models.CharField(max_length=128, default=&apos;&#x672A;&#x77E5;&#x578B;&#x53F7;&apos;, verbose_name=&apos;&#x5B89;&#x5168;&#x8BBE;&#x5907;&#x578B;&#x53F7;&apos;)
+
+    def __str__(self):
+        return self.asset.name + &quot;--&quot; + self.get_sub_asset_type_display() + str(self.model) + &quot; id:%s&quot; % self.id
+
+    class Meta:
+        verbose_name = &apos;&#x5B89;&#x5168;&#x8BBE;&#x5907;&apos;
+        verbose_name_plural = &quot;&#x5B89;&#x5168;&#x8BBE;&#x5907;&quot;
+
+
+class StorageDevice(models.Model):
+    &quot;&quot;&quot;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&quot;&quot;&quot;
+
+    sub_asset_type_choice = (
+        (0, &apos;&#x78C1;&#x76D8;&#x9635;&#x5217;&apos;),
+        (1, &apos;&#x7F51;&#x7EDC;&#x5B58;&#x50A8;&#x5668;&apos;),
+        (2, &apos;&#x78C1;&#x5E26;&#x5E93;&apos;),
+        (4, &apos;&#x78C1;&#x5E26;&#x673A;&apos;),
+    )
+
+    asset = models.OneToOneField(&apos;Asset&apos;, on_delete=models.CASCADE)
+    sub_asset_type = models.SmallIntegerField(choices=sub_asset_type_choice, default=0, verbose_name=&quot;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&quot;)
+    model = models.CharField(max_length=128, default=&apos;&#x672A;&#x77E5;&#x578B;&#x53F7;&apos;, verbose_name=&apos;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x578B;&#x53F7;&apos;)
+
+    def __str__(self):
+        return self.asset.name + &quot;--&quot; + self.get_sub_asset_type_display() + str(self.model) + &quot; id:%s&quot; % self.id
+
+    class Meta:
+        verbose_name = &apos;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&apos;
+        verbose_name_plural = &quot;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&quot;
+
+
+class NetworkDevice(models.Model):
+    &quot;&quot;&quot;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&quot;&quot;&quot;
+
+    sub_asset_type_choice = (
+        (0, &apos;&#x8DEF;&#x7531;&#x5668;&apos;),
+        (1, &apos;&#x4EA4;&#x6362;&#x673A;&apos;),
+        (2, &apos;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&apos;),
+        (4, &apos;VPN&#x8BBE;&#x5907;&apos;),
+    )
+
+    asset = models.OneToOneField(&apos;Asset&apos;, on_delete=models.CASCADE)
+    sub_asset_type = models.SmallIntegerField(choices=sub_asset_type_choice, default=0, verbose_name=&quot;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&quot;)
+
+    vlan_ip = models.GenericIPAddressField(blank=True, null=True, verbose_name=&quot;VLanIP&quot;)
+    intranet_ip = models.GenericIPAddressField(blank=True, null=True, verbose_name=&quot;&#x5185;&#x7F51;IP&quot;)
+
+    model = models.CharField(max_length=128, default=&apos;&#x672A;&#x77E5;&#x578B;&#x53F7;&apos;,  verbose_name=&quot;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x578B;&#x53F7;&quot;)
+    firmware = models.CharField(max_length=128, blank=True, null=True, verbose_name=&quot;&#x8BBE;&#x5907;&#x56FA;&#x4EF6;&#x7248;&#x672C;&quot;)
+    port_num = models.SmallIntegerField(null=True, blank=True, verbose_name=&quot;&#x7AEF;&#x53E3;&#x4E2A;&#x6570;&quot;)
+    device_detail = models.TextField(null=True, blank=True, verbose_name=&quot;&#x8BE6;&#x7EC6;&#x914D;&#x7F6E;&quot;)
+
+    def __str__(self):
+        return &apos;%s--%s--%s &lt;sn:%s&gt;&apos; % (self.asset.name, self.get_sub_asset_type_display(), self.model, self.asset.sn)
+
+    class Meta:
+        verbose_name = &apos;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&apos;
+        verbose_name_plural = &quot;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&quot;
+
+
+class Software(models.Model):
+    &quot;&quot;&quot;
+    &#x53EA;&#x4FDD;&#x5B58;&#x4ED8;&#x8D39;&#x8D2D;&#x4E70;&#x7684;&#x8F6F;&#x4EF6;
+    &quot;&quot;&quot;
+    sub_asset_type_choice = (
+        (0, &apos;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&apos;),
+        (1, &apos;&#x529E;&#x516C;\&#x5F00;&#x53D1;&#x8F6F;&#x4EF6;&apos;),
+        (2, &apos;&#x4E1A;&#x52A1;&#x8F6F;&#x4EF6;&apos;),
+    )
+
+    sub_asset_type = models.SmallIntegerField(choices=sub_asset_type_choice, default=0, verbose_name=&quot;&#x8F6F;&#x4EF6;&#x7C7B;&#x578B;&quot;)
+    license_num = models.IntegerField(default=1, verbose_name=&quot;&#x6388;&#x6743;&#x6570;&#x91CF;&quot;)
+    version = models.CharField(max_length=64, unique=True, help_text=&apos;&#x4F8B;&#x5982;: RedHat release 7 (Final)&apos;,
+                               verbose_name=&apos;&#x8F6F;&#x4EF6;/&#x7CFB;&#x7EDF;&#x7248;&#x672C;&apos;)
+
+    def __str__(self):
+        return &apos;%s--%s&apos; % (self.get_sub_asset_type_display(), self.version)
+
+    class Meta:
+        verbose_name = &apos;&#x8F6F;&#x4EF6;/&#x7CFB;&#x7EDF;&apos;
+        verbose_name_plural = &quot;&#x8F6F;&#x4EF6;/&#x7CFB;&#x7EDF;&quot;
+
+
+class CPU(models.Model):
+    &quot;&quot;&quot;CPU&#x7EC4;&#x4EF6;&quot;&quot;&quot;
+
+    asset = models.OneToOneField(&apos;Asset&apos;, on_delete=models.CASCADE)  # &#x8BBE;&#x5907;&#x4E0A;&#x7684;cpu&#x80AF;&#x5B9A;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x5EFA;&#x7ACB;&#x591A;&#x4E2A;cpu&#x6570;&#x636E;&#xFF0C;&#x4E00;&#x6761;&#x5C31;&#x53EF;&#x4EE5;&#xFF0C;&#x56E0;&#x6B64;&#x4F7F;&#x7528;&#x4E00;&#x5BF9;&#x4E00;&#x3002;
+    cpu_model = models.CharField(&apos;CPU&#x578B;&#x53F7;&apos;, max_length=128, blank=True, null=True)
+    cpu_count = models.PositiveSmallIntegerField(&apos;&#x7269;&#x7406;CPU&#x4E2A;&#x6570;&apos;, default=1)
+    cpu_core_count = models.PositiveSmallIntegerField(&apos;CPU&#x6838;&#x6570;&apos;, default=1)
+
+    def __str__(self):
+        return self.asset.name + &quot;:   &quot; + self.cpu_model
+
+    class Meta:
+        verbose_name = &apos;CPU&apos;
+        verbose_name_plural = &quot;CPU&quot;
+
+
+class RAM(models.Model):
+    &quot;&quot;&quot;&#x5185;&#x5B58;&#x7EC4;&#x4EF6;&quot;&quot;&quot;
+
+    asset = models.ForeignKey(&apos;Asset&apos;, on_delete=models.CASCADE)
+    sn = models.CharField(&apos;SN&#x53F7;&apos;, max_length=128, blank=True, null=True)
+    model = models.CharField(&apos;&#x5185;&#x5B58;&#x578B;&#x53F7;&apos;, max_length=128, blank=True, null=True)
+    manufacturer = models.CharField(&apos;&#x5185;&#x5B58;&#x5236;&#x9020;&#x5546;&apos;, max_length=128, blank=True, null=True)
+    slot = models.CharField(&apos;&#x63D2;&#x69FD;&apos;, max_length=64)
+    capacity = models.IntegerField(&apos;&#x5185;&#x5B58;&#x5927;&#x5C0F;(GB)&apos;, blank=True, null=True)
+
+    def __str__(self):
+        return &apos;%s: %s: %s: %s&apos; % (self.asset.name, self.model, self.slot, self.capacity)
+
+    class Meta:
+        verbose_name = &apos;&#x5185;&#x5B58;&apos;
+        verbose_name_plural = &quot;&#x5185;&#x5B58;&quot;
+        unique_together = (&apos;asset&apos;, &apos;slot&apos;)  # &#x540C;&#x4E00;&#x8D44;&#x4EA7;&#x4E0B;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x6839;&#x636E;&#x63D2;&#x69FD;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x5FC5;&#x987B;&#x552F;&#x4E00;
+
+
+class Disk(models.Model):
+    &quot;&quot;&quot;&#x786C;&#x76D8;&#x8BBE;&#x5907;&quot;&quot;&quot;
+
+    disk_interface_type_choice = (
+        (&apos;SATA&apos;, &apos;SATA&apos;),
+        (&apos;SAS&apos;, &apos;SAS&apos;),
+        (&apos;SCSI&apos;, &apos;SCSI&apos;),
+        (&apos;SSD&apos;, &apos;SSD&apos;),
+        (&apos;unknown&apos;, &apos;unknown&apos;),
+    )
+
+    asset = models.ForeignKey(&apos;Asset&apos;, on_delete=models.CASCADE)
+    sn = models.CharField(&apos;&#x786C;&#x76D8;SN&#x53F7;&apos;, max_length=128)
+    slot = models.CharField(&apos;&#x6240;&#x5728;&#x63D2;&#x69FD;&#x4F4D;&apos;, max_length=64, blank=True, null=True)
+    model = models.CharField(&apos;&#x78C1;&#x76D8;&#x578B;&#x53F7;&apos;, max_length=128, blank=True, null=True)
+    manufacturer = models.CharField(&apos;&#x78C1;&#x76D8;&#x5236;&#x9020;&#x5546;&apos;, max_length=128, blank=True, null=True)
+    capacity = models.FloatField(&apos;&#x78C1;&#x76D8;&#x5BB9;&#x91CF;(GB)&apos;, blank=True, null=True)
+    interface_type = models.CharField(&apos;&#x63A5;&#x53E3;&#x7C7B;&#x578B;&apos;, max_length=16, choices=disk_interface_type_choice, default=&apos;unknown&apos;)
+
+    def __str__(self):
+        return &apos;%s:  %s:  %s:  %sGB&apos; % (self.asset.name, self.model, self.slot, self.capacity)
+
+    class Meta:
+        verbose_name = &apos;&#x786C;&#x76D8;&apos;
+        verbose_name_plural = &quot;&#x786C;&#x76D8;&quot;
+        unique_together = (&apos;asset&apos;, &apos;sn&apos;)
+
+
+class NIC(models.Model):
+    &quot;&quot;&quot;&#x7F51;&#x5361;&#x7EC4;&#x4EF6;&quot;&quot;&quot;
+
+    asset = models.ForeignKey(&apos;Asset&apos;, on_delete=models.CASCADE)  # &#x6CE8;&#x610F;&#x8981;&#x7528;&#x5916;&#x952E;
+    name = models.CharField(&apos;&#x7F51;&#x5361;&#x540D;&#x79F0;&apos;, max_length=64, blank=True, null=True)
+    model = models.CharField(&apos;&#x7F51;&#x5361;&#x578B;&#x53F7;&apos;, max_length=128)
+    mac = models.CharField(&apos;MAC&#x5730;&#x5740;&apos;, max_length=64)  # &#x865A;&#x62DF;&#x673A;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x540C;&#x6837;&#x7684;mac&#x5730;&#x5740;
+    ip_address = models.GenericIPAddressField(&apos;IP&#x5730;&#x5740;&apos;, blank=True, null=True)
+    net_mask = models.CharField(&apos;&#x63A9;&#x7801;&apos;, max_length=64, blank=True, null=True)
+    bonding = models.CharField(&apos;&#x7ED1;&#x5B9A;&#x5730;&#x5740;&apos;, max_length=64, blank=True, null=True)
+
+    def __str__(self):
+        return &apos;%s:  %s:  %s&apos; % (self.asset.name, self.model, self.mac)
+
+    class Meta:
+        verbose_name = &apos;&#x7F51;&#x5361;&apos;
+        verbose_name_plural = &quot;&#x7F51;&#x5361;&quot;
+        unique_together = (&apos;asset&apos;, &apos;model&apos;, &apos;mac&apos;)  # &#x8D44;&#x4EA7;&#x3001;&#x578B;&#x53F7;&#x548C;mac&#x5FC5;&#x987B;&#x8054;&#x5408;&#x552F;&#x4E00;&#x3002;&#x9632;&#x6B62;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x7684;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x3002;
+
+
+class IDC(models.Model):
+    &quot;&quot;&quot;&#x673A;&#x623F;&quot;&quot;&quot;
+    name = models.CharField(max_length=64, unique=True, verbose_name=&quot;&#x673A;&#x623F;&#x540D;&#x79F0;&quot;)
+    memo = models.CharField(max_length=128, blank=True, null=True, verbose_name=&apos;&#x5907;&#x6CE8;&apos;)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x673A;&#x623F;&apos;
+        verbose_name_plural = &quot;&#x673A;&#x623F;&quot;
+
+
+class Manufacturer(models.Model):
+    &quot;&quot;&quot;&#x5382;&#x5546;&quot;&quot;&quot;
+
+    name = models.CharField(&apos;&#x5382;&#x5546;&#x540D;&#x79F0;&apos;, max_length=64, unique=True)
+    telephone = models.CharField(&apos;&#x652F;&#x6301;&#x7535;&#x8BDD;&apos;, max_length=30, blank=True, null=True)
+    memo = models.CharField(&apos;&#x5907;&#x6CE8;&apos;, max_length=128, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x5382;&#x5546;&apos;
+        verbose_name_plural = &quot;&#x5382;&#x5546;&quot;
+
+
+class BusinessUnit(models.Model):
+    &quot;&quot;&quot;&#x4E1A;&#x52A1;&#x7EBF;&quot;&quot;&quot;
+
+    parent_unit = models.ForeignKey(&apos;self&apos;, blank=True, null=True, related_name=&apos;parent_level&apos;,
+                                    on_delete=models.CASCADE)
+    name = models.CharField(&apos;&#x4E1A;&#x52A1;&#x7EBF;&#x540D;&#x79F0;&apos;, max_length=64, unique=True)
+    memo = models.CharField(&apos;&#x5907;&#x6CE8;&apos;, max_length=64, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x4E1A;&#x52A1;&#x7EBF;&apos;
+        verbose_name_plural = &quot;&#x4E1A;&#x52A1;&#x7EBF;&quot;
+
+
+class Contract(models.Model):
+    &quot;&quot;&quot;&#x5408;&#x540C;&quot;&quot;&quot;
+
+    sn = models.CharField(&apos;&#x5408;&#x540C;&#x53F7;&apos;, max_length=128, unique=True)
+    name = models.CharField(&apos;&#x5408;&#x540C;&#x540D;&#x79F0;&apos;, max_length=64)
+    memo = models.TextField(&apos;&#x5907;&#x6CE8;&apos;, blank=True, null=True)
+    price = models.IntegerField(&apos;&#x5408;&#x540C;&#x91D1;&#x989D;&apos;)
+    detail = models.TextField(&apos;&#x5408;&#x540C;&#x8BE6;&#x7EC6;&apos;, blank=True, null=True)
+    start_day = models.DateField(&apos;&#x5F00;&#x59CB;&#x65E5;&#x671F;&apos;, blank=True, null=True)
+    end_day = models.DateField(&apos;&#x5931;&#x6548;&#x65E5;&#x671F;&apos;, blank=True, null=True)
+    license_num = models.IntegerField(&apos;license&#x6570;&#x91CF;&apos;, blank=True, null=True)
+    c_day = models.DateField(&apos;&#x521B;&#x5EFA;&#x65E5;&#x671F;&apos;, auto_now_add=True)
+    m_day = models.DateField(&apos;&#x4FEE;&#x6539;&#x65E5;&#x671F;&apos;, auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x5408;&#x540C;&apos;
+        verbose_name_plural = &quot;&#x5408;&#x540C;&quot;
+
+
+class Tag(models.Model):
+    &quot;&quot;&quot;&#x6807;&#x7B7E;&quot;&quot;&quot;
+    name = models.CharField(&apos;&#x6807;&#x7B7E;&#x540D;&apos;, max_length=32, unique=True)
+    c_day = models.DateField(&apos;&#x521B;&#x5EFA;&#x65E5;&#x671F;&apos;, auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x6807;&#x7B7E;&apos;
+        verbose_name_plural = &quot;&#x6807;&#x7B7E;&quot;
+
+
+class EventLog(models.Model):
+    &quot;&quot;&quot;
+    &#x65E5;&#x5FD7;.
+    &#x5728;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x88AB;&#x5220;&#x9664;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0D;&#x80FD;&#x4E00;&#x5E76;&#x5220;&#x9664;&#xFF0C;&#x9700;&#x4FDD;&#x7559;&#x65E5;&#x5FD7;&#x3002;
+    &#x56E0;&#x6B64;&#xFF0C;on_delete=models.SET_NULL
+    &quot;&quot;&quot;
+
+    name = models.CharField(&apos;&#x4E8B;&#x4EF6;&#x540D;&#x79F0;&apos;, max_length=128)
+    event_type_choice = (
+        (0, &apos;&#x5176;&#x5B83;&apos;),
+        (1, &apos;&#x786C;&#x4EF6;&#x53D8;&#x66F4;&apos;),
+        (2, &apos;&#x65B0;&#x589E;&#x914D;&#x4EF6;&apos;),
+        (3, &apos;&#x8BBE;&#x5907;&#x4E0B;&#x7EBF;&apos;),
+        (4, &apos;&#x8BBE;&#x5907;&#x4E0A;&#x7EBF;&apos;),
+        (5, &apos;&#x5B9A;&#x671F;&#x7EF4;&#x62A4;&apos;),
+        (6, &apos;&#x4E1A;&#x52A1;&#x4E0A;&#x7EBF;\&#x66F4;&#x65B0;\&#x53D8;&#x66F4;&apos;),
+    )
+    asset = models.ForeignKey(&apos;Asset&apos;, blank=True, null=True, on_delete=models.SET_NULL)  # &#x5F53;&#x8D44;&#x4EA7;&#x5BA1;&#x6279;&#x6210;&#x529F;&#x65F6;&#x6709;&#x8FD9;&#x9879;&#x6570;&#x636E;
+    new_asset = models.ForeignKey(&apos;NewAssetApprovalZone&apos;, blank=True, null=True, on_delete=models.SET_NULL)  # &#x5F53;&#x8D44;&#x4EA7;&#x5BA1;&#x6279;&#x5931;&#x8D25;&#x65F6;&#x6709;&#x8FD9;&#x9879;&#x6570;&#x636E;
+    event_type = models.SmallIntegerField(&apos;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&apos;, choices=event_type_choice, default=4)
+    component = models.CharField(&apos;&#x4E8B;&#x4EF6;&#x5B50;&#x9879;&apos;, max_length=256, blank=True, null=True)
+    detail = models.TextField(&apos;&#x4E8B;&#x4EF6;&#x8BE6;&#x60C5;&apos;)
+    date = models.DateTimeField(&apos;&#x4E8B;&#x4EF6;&#x65F6;&#x95F4;&apos;, auto_now_add=True)
+    user = models.ForeignKey(User, blank=True, null=True, verbose_name=&apos;&#x4E8B;&#x4EF6;&#x6267;&#x884C;&#x4EBA;&apos;, on_delete=models.SET_NULL)  # &#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x8D44;&#x4EA7;&#x6570;&#x636E;&#x65F6;&#x6CA1;&#x6709;&#x6267;&#x884C;&#x4EBA;
+    memo = models.TextField(&apos;&#x5907;&#x6CE8;&apos;, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = &apos;&#x4E8B;&#x4EF6;&#x7EAA;&#x5F55;&apos;
+        verbose_name_plural = &quot;&#x4E8B;&#x4EF6;&#x7EAA;&#x5F55;&quot;
+
+
+class NewAssetApprovalZone(models.Model):
+    &quot;&quot;&quot;&#x65B0;&#x8D44;&#x4EA7;&#x5F85;&#x5BA1;&#x6279;&#x533A;&quot;&quot;&quot;
+
+    sn = models.CharField(&apos;&#x8D44;&#x4EA7;SN&#x53F7;&apos;, max_length=128, unique=True)  # &#x6B64;&#x5B57;&#x6BB5;&#x5FC5;&#x586B;
+    asset_type_choice = (
+        (&apos;server&apos;, &apos;&#x670D;&#x52A1;&#x5668;&apos;),
+        (&apos;networkdevice&apos;, &apos;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&apos;),
+        (&apos;storagedevice&apos;, &apos;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&apos;),
+        (&apos;securitydevice&apos;, &apos;&#x5B89;&#x5168;&#x8BBE;&#x5907;&apos;),
+        (&apos;software&apos;, &apos;&#x8F6F;&#x4EF6;&#x8D44;&#x4EA7;&apos;),
+    )
+    asset_type = models.CharField(choices=asset_type_choice, default=&apos;server&apos;, max_length=64, blank=True, null=True,
+                                  verbose_name=&apos;&#x8D44;&#x4EA7;&#x7C7B;&#x578B;&apos;)
+
+    manufacturer = models.CharField(max_length=64, blank=True, null=True, verbose_name=&apos;&#x751F;&#x4EA7;&#x5382;&#x5546;&apos;)
+    model = models.CharField(max_length=128, blank=True, null=True, verbose_name=&apos;&#x578B;&#x53F7;&apos;)
+    ram_size = models.PositiveIntegerField(blank=True, null=True, verbose_name=&apos;&#x5185;&#x5B58;&#x5927;&#x5C0F;&apos;)
+    cpu_model = models.CharField(max_length=128, blank=True, null=True, verbose_name=&apos;CPU&#x578B;&#x53F7;&apos;)
+    cpu_count = models.PositiveSmallIntegerField(&apos;CPU&#x7269;&#x7406;&#x6570;&#x91CF;&apos;, blank=True, null=True)
+    cpu_core_count = models.PositiveSmallIntegerField(&apos;CPU&#x6838;&#x5FC3;&#x6570;&#x91CF;&apos;, blank=True, null=True)
+    os_distribution = models.CharField(&apos;&#x53D1;&#x884C;&#x5546;&apos;, max_length=64, blank=True, null=True)
+    os_type = models.CharField(&apos;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&apos;, max_length=64, blank=True, null=True)
+    os_release = models.CharField(&apos;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x53F7;&apos;, max_length=64, blank=True, null=True)
+
+    data = models.TextField(&apos;&#x8D44;&#x4EA7;&#x6570;&#x636E;&apos;)  # &#x6B64;&#x5B57;&#x6BB5;&#x5FC5;&#x586B;
+
+    c_time = models.DateTimeField(&apos;&#x6C47;&#x62A5;&#x65E5;&#x671F;&apos;, auto_now_add=True)
+    m_time = models.DateTimeField(&apos;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x65E5;&#x671F;&apos;, auto_now=True)
+    approved = models.BooleanField(&apos;&#x662F;&#x5426;&#x6279;&#x51C6;&apos;, default=False)
+
+    def __str__(self):
+        return self.sn
+
+    class Meta:
+        verbose_name = &apos;&#x65B0;&#x4E0A;&#x7EBF;&#x5F85;&#x6279;&#x51C6;&#x8D44;&#x4EA7;&apos;
+        verbose_name_plural = &quot;&#x65B0;&#x4E0A;&#x7EBF;&#x5F85;&#x6279;&#x51C6;&#x8D44;&#x4EA7;&quot;
+        ordering = [&apos;-c_time&apos;]
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.html" class="navigation navigation-prev " aria-label="Previous page: 1.项目需求分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.html" class="navigation navigation-next " aria-label="Next page: 3.数据收集客户端">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"typora-copy-images-to":"images","title":"2.模型设计","level":"1.4.2","depth":2,"next":{"title":"3.数据收集客户端","level":"1.4.3","depth":2,"path":"part2/3.md","ref":"part2/3.md","articles":[]},"previous":{"title":"1.项目需求分析","level":"1.4.1","depth":2,"path":"part2/1.md","ref":"part2/1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part2/2.md","mtime":"2020-08-12T07:42:13.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-14T00:47:35.448Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
